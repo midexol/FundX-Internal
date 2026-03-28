@@ -54,7 +54,7 @@ export default function CreateCampaign() {
     videoUrl: "",
     budgetBreakdown: "",
     roadmap: "",
-    image: "/campaign-1.jpg",
+    image: "",
     goal: "10000",
     duration: "30",
     fundingModel: "0",
