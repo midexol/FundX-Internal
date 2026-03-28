@@ -1,53 +1,67 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Navbar } from "@/components/fundx/Navbar";
-import { Footer } from "@/components/fundx/Footer";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react";
-import { useStacks } from "@/components/fundx/StacksProvider";
-import { toast } from "sonner";
-import { WizardSteps } from "@/components/create/WizardSteps";
-import { LivePreview } from "@/components/create/LivePreview";
+import { useState } from "react"
+import { Navbar } from "@/components/fundx/Navbar"
+import { Footer } from "@/components/fundx/Footer"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
+import { useStacks } from "@/components/fundx/StacksProvider"
+import { toast } from "sonner"
 
+import { WizardSteps } from "@/components/create/WizardSteps"
+import { LivePreview } from "@/components/create/LivePreview"
 
+// 🚨 OUR EXPANDED VIP LIST
 export interface CreateCampaignData {
   creatorName: string;
   creatorBio: string;
   email: string;
+  twitter: string;       // NEW
+  github: string;        // NEW
+  portfolio: string;     // NEW
   title: string;
   tagline: string;
   category: string;
   projectStage: string;
   description: string;
+  videoUrl: string;      // NEW
+  budgetBreakdown: string; // NEW
+  roadmap: string;       // NEW
   image: string;
   goal: string;
   duration: string;
-  fundingModel: "0" | "1"; 
+  fundingModel: "0" | "1";
 }
 
 export default function CreateCampaign() {
-  const { isSignedIn, authenticate } = useStacks();
-  const [step, setStep] = useState(1);
-
+  const { isSignedIn, authenticate } = useStacks()
+  const [step, setStep] = useState(1)
+  
+  // 🚨 ADD THE NEW FIELDS AS EMPTY TEXT SO THE APP DOESN'T CRASH
   const [formData, setFormData] = useState<CreateCampaignData>({
     creatorName: "",
     creatorBio: "",
     email: "",
+    twitter: "",
+    github: "",
+    portfolio: "",
     title: "",
     tagline: "",
     category: "DeFi",
     projectStage: "MVP",
     description: "",
+    videoUrl: "",
+    budgetBreakdown: "",
+    roadmap: "",
     image: "/campaign-1.jpg",
     goal: "10000",
     duration: "30",
-    fundingModel: "0", 
-  });
+    fundingModel: "0",
+  })
 
-
-  const handleNext = () => setStep(step + 1);
-  const handleBack = () => setStep(step - 1);
+  const handleNext = () => setStep(step + 1)
+  const handleBack = () => setStep(step - 1)
+  // ... the rest stays the same!
 
   const handleSubmit = () => {
     if (!isSignedIn) {
