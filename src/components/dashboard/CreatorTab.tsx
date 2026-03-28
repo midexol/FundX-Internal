@@ -31,12 +31,7 @@ export function CreatorTab() {
              </div>
           </div>
           <div className="w-full md:w-auto shrink-0">
-             <Button className="w-full md:w-auto h-12 px-8 rounded-xl bg-green-500 hover:bg-green-600 text-white shadow-md font-bold text-base transition-all">
-                Withdraw Funds
-             </Button>
-               <Button className="w-full md:w-auto h-14 px-8 rounded-xl bg-gradient-to-b from-green-300 to-green-400 border border-green-500 text-green-950 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_4px_15px_rgba(134,239,172,0.5)] font-bold text-base transition-all hover:scale-[1.02] active:scale-95 active:shadow-inner">
-                Withdraw Funds
-             </Button>
+         
           </div>
        </div>
 
