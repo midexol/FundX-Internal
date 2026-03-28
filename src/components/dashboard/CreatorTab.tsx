@@ -54,13 +54,13 @@ export function CreatorTab() {
           <div className="absolute -right-4 -bottom-10 text-[130px] font-black text-orange-50 opacity-80 z-0 select-none pointer-events-none tracking-tighter leading-none">
              ACTIVE
           </div>
-          <Rocket strokeWidth={1} className="absolute right-10 -bottom-10 w-72 h-72 text-orange-500 opacity-[0.04] z-0 pointer-events-none transform -rotate-12" />
+          <Rocket strokeWidth={1} className="absolute right-10 -bottom-10 w-80 h-80 text-orange-500 opacity-[0.04] z-0 pointer-events-none transform -rotate-12" />
 
           <div className="absolute top-0 left-0 w-2 h-full bg-gradient-tush z-10" />
           
           <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
              
-             {/* 🚨 THUMBNAIL INCREASED to sm:w-40 sm:h-40 */}
+          
              <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow">
                 <Image src="/campaign-1.jpg" alt="Stacks Dev Bootcamp" fill className="object-cover" />
              </div>
@@ -81,7 +81,7 @@ export function CreatorTab() {
                    <div className="text-slate-500 font-medium text-base">Goal: 10,000 STX</div>
                 </div>
                 
-                {/* 🚨 PROGRESS BAR REDUCED to h-8 */}
+           
                 <div className="w-full max-w-md bg-slate-100 rounded-full h-6 mt-6 overflow-hidden shadow-[inset_0_3px_6px_rgba(0,0,0,0.1)] border border-slate-200/50 p-1 relative z-10">
                    <div className="bg-gradient-to-r from-[#FF6B4A] to-[#FF3D71] h-full rounded-full shadow-[0_0_15px_rgba(255,107,74,0.6)] relative flex items-center px-4" style={{ width: "45%" }}>
                       <div className="absolute top-0 left-0 w-full h-1/2 bg-white/20 rounded-t-full" />
