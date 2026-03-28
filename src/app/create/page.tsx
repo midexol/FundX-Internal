@@ -94,11 +94,8 @@ export default function CreateCampaign() {
           {/* LEFT: Wizard */}
           <div className="space-y-8">
             {/* Steps Indicator */}
-       
-
-                {/* Steps Indicator */}
             <div className="flex gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
-               {["Identity", "Bio", "Basics", "Story", "Execution", "Funding"].map((label, idx) => {
+               {["Identity", "Bio", "Basics", "Story", "Execute", "Fund"].map((label, idx) => {
                 const num = idx + 1;
                 return (
                   <div key={num} className="flex items-center gap-2 shrink-0">
@@ -139,7 +136,7 @@ export default function CreateCampaign() {
                   <div />
                 )}
 
-                {step < 4 ? (
+                {step < 6 ? (
                   <Button
                     onClick={handleNext}
                     className="h-12 px-8 rounded-xl bg-slate-900 text-white hover:bg-slate-800 hover:scale-105 transition-all"
