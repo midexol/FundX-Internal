@@ -73,15 +73,7 @@ export default function DashboardPage() {
                value="campaigns" 
                className="rounded-xl data-[state=active]:bg-white data-[state=active]:text-slate-900 data-[state=active]:shadow-[0_2px_10px_rgba(0,0,0,0.05)] text-slate-500 px-8 py-3 text-sm font-bold transition-all duration-300"
             >
-              My Campaigns
-            </TabsTrigger>
-            <TabsTrigger 
-               value="contributions" 
-               className="rounded-xl data-[state=active]:bg-white data-[state=active]:text-slate-900 data-[state=active]:shadow-[0_2px_10px_rgba(0,0,0,0.05)] text-slate-500 px-8 py-3 text-sm font-bold transition-all duration-300"
-            >
-              My Contributions
-            </TabsTrigger>
-          </TabsList>
+           
           
           {/* 🚨 PLUGGED IN HERE */}
           <CreatorTab />
