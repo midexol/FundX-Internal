@@ -94,8 +94,11 @@ export default function CreateCampaign() {
           {/* LEFT: Wizard */}
           <div className="space-y-8">
             {/* Steps Indicator */}
-            <div className="flex gap-4 mb-8 overflow-x-auto pb-2">
-              {["Identity", "Project", "Story", "Funding"].map((label, idx) => {
+       
+
+                {/* Steps Indicator */}
+            <div className="flex gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
+               {["Identity", "Bio", "Basics", "Story", "Execution", "Funding"].map((label, idx) => {
                 const num = idx + 1;
                 return (
                   <div key={num} className="flex items-center gap-2 shrink-0">

@@ -125,55 +125,122 @@ if (step === 1) {
   }
 
 
-if (step === 3) {
+// if (step === 3) {
+//     return (
+//       <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-500">
+//          <div className="mb-6">
+//             <h2 className="text-2xl font-bold text-slate-900">The Pitch</h2>
+//             <p className="text-slate-500 text-sm">Tell your story and explain how the funds will be used.</p>
+//          </div>
+//          <div className="space-y-4">
+            
+//             <div className="grid md:grid-cols-2 gap-4">
+//                <div className="space-y-2">
+//                   <Label>Short Tagline</Label>
+//                   <Textarea 
+//                      placeholder="Explain it in one sentence..." 
+//                      className="h-20 rounded-xl resize-none"
+//                      value={formData.tagline}
+//                      onChange={(e) => setFormData({...formData, tagline: e.target.value})}
+//                   />
+//                </div>
+//                {/* 🚨 NEW: VIDEO LINK */}
+//                <div className="space-y-2">
+//                   <Label>Pitch Video URL (Optional)</Label>
+//                   <Textarea 
+//                      placeholder="YouTube or Vimeo link..." 
+//                      className="h-20 rounded-xl resize-none"
+//                      value={formData.videoUrl}
+//                      onChange={(e) => setFormData({...formData, videoUrl: e.target.value})}
+//                   />
+//                </div>
+//             </div>
+
+//             {/* 🚨 UPDATED: PROBLEM & SOLUTION */}
+//             <div className="space-y-2">
+//                <Label>The Problem & Solution</Label>
+//                <Textarea 
+//                   placeholder="What specific problem are you solving, and how does your product fix it?" 
+//                   className="min-h-[120px] rounded-xl resize-none p-4"
+//                   value={formData.description}
+//                   onChange={(e) => setFormData({...formData, description: e.target.value})}
+//                />
+//             </div>
+
+//             {/* 🚨 NEW: BUDGET & ROADMAP */}
+//             <div className="grid md:grid-cols-2 gap-4">
+//                <div className="space-y-2">
+//                   <Label>Budget Breakdown</Label>
+//                   <Textarea 
+//                      placeholder="How will you spend the funds? (e.g., 60% Dev, 40% Servers)" 
+//                      className="h-24 rounded-xl resize-none"
+//                      value={formData.budgetBreakdown}
+//                      onChange={(e) => setFormData({...formData, budgetBreakdown: e.target.value})}
+//                   />
+//                </div>
+//                <div className="space-y-2">
+//                   <Label>Product Roadmap</Label>
+//                   <Textarea 
+//                      placeholder="What are your next 3 major milestones?" 
+//                      className="h-24 rounded-xl resize-none"
+//                      value={formData.roadmap}
+//                      onChange={(e) => setFormData({...formData, roadmap: e.target.value})}
+//                   />
+//                </div>
+//             </div>
+
+//          </div>
+//       </div>
+//     )
+//   }
+
+  if (step === 3) {
     return (
       <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-500">
-         <div className="mb-6">
+         <div className="mb-4">
             <h2 className="text-2xl font-bold text-slate-900">The Pitch</h2>
             <p className="text-slate-500 text-sm">Tell your story and explain how the funds will be used.</p>
          </div>
-         <div className="space-y-4">
+         <div className="space-y-5">
             
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-5">
                <div className="space-y-2">
                   <Label>Short Tagline</Label>
                   <Textarea 
                      placeholder="Explain it in one sentence..." 
-                     className="h-20 rounded-xl resize-none"
+                     className="h-14 rounded-xl resize-none"
                      value={formData.tagline}
                      onChange={(e) => setFormData({...formData, tagline: e.target.value})}
                   />
                </div>
-               {/* 🚨 NEW: VIDEO LINK */}
                <div className="space-y-2">
                   <Label>Pitch Video URL (Optional)</Label>
-                  <Textarea 
-                     placeholder="YouTube or Vimeo link..." 
-                     className="h-20 rounded-xl resize-none"
+                  {/* Changed from Textarea to a clean Input for the link */}
+                  <Input 
+                     placeholder="https://youtube.com/..." 
+                     className="h-14 rounded-xl"
                      value={formData.videoUrl}
                      onChange={(e) => setFormData({...formData, videoUrl: e.target.value})}
                   />
                </div>
             </div>
 
-            {/* 🚨 UPDATED: PROBLEM & SOLUTION */}
             <div className="space-y-2">
                <Label>The Problem & Solution</Label>
                <Textarea 
                   placeholder="What specific problem are you solving, and how does your product fix it?" 
-                  className="min-h-[120px] rounded-xl resize-none p-4"
+                  className="min-h-[100px] rounded-xl resize-none p-4"
                   value={formData.description}
                   onChange={(e) => setFormData({...formData, description: e.target.value})}
                />
             </div>
 
-            {/* 🚨 NEW: BUDGET & ROADMAP */}
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-5">
                <div className="space-y-2">
                   <Label>Budget Breakdown</Label>
                   <Textarea 
-                     placeholder="How will you spend the funds? (e.g., 60% Dev, 40% Servers)" 
-                     className="h-24 rounded-xl resize-none"
+                     placeholder="e.g., 60% Dev, 40% Servers" 
+                     className="h-20 rounded-xl resize-none"
                      value={formData.budgetBreakdown}
                      onChange={(e) => setFormData({...formData, budgetBreakdown: e.target.value})}
                   />
@@ -181,8 +248,8 @@ if (step === 3) {
                <div className="space-y-2">
                   <Label>Product Roadmap</Label>
                   <Textarea 
-                     placeholder="What are your next 3 major milestones?" 
-                     className="h-24 rounded-xl resize-none"
+                     placeholder="What are your next 3 milestones?" 
+                     className="h-20 rounded-xl resize-none"
                      value={formData.roadmap}
                      onChange={(e) => setFormData({...formData, roadmap: e.target.value})}
                   />
