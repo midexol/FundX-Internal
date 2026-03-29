@@ -116,7 +116,7 @@ export const CAMPAIGNS: Campaign[] = [
   {
     id: "zero-fee-dex",
     title: "Zero-Fee DEX",
-    tagline: "Swap Stacks assets with_ zero protocol fees.",
+    tagline: "Swap Stacks assets with zero protocol fees.",
     description: "A community-owned automated market maker prioritizing deep liquidity and zero rent-seeking.",
     category: "DeFi",
     projectStage: "Prototype",
@@ -146,7 +146,7 @@ export const CAMPAIGNS: Campaign[] = [
     id: "defi-for-everyone",
     title: "DeFi for Everyone",
     tagline: "The first mobile-first yield aggregator on Stacks.",
-    description: "Democratizing finance for the 99% with_ simple UX and trustless strategies.",
+    description: "Democratizing finance for the 99% with simple UX and trustless strategies.",
     category: "DeFi",
     projectStage: "Prototype",
     location: "Lagos, Nigeria",
@@ -173,7 +173,7 @@ export const CAMPAIGNS: Campaign[] = [
     id: "liquid-ops",
     title: "Liquid Ops",
     tagline: "Decentralized dev-ops tooling for Clarity.",
-    description: "Automate your deployments with_ 100% uptime.",
+    description: "Automate your deployments with 100% uptime.",
     category: "Infrastructure",
     projectStage: "Idea",
     location: "Berlin, Germany",
@@ -254,14 +254,8 @@ export const CAMPAIGNS: Campaign[] = [
   }
 ];
 
-// Helper: Get all campaigns for the Explore Page
-export function getAllCampaigns() {
-  return CAMPAIGNS;
-}
-
-// Helper: Get the single trending campaign for the center slot
-export function getHeroCampaign() {
-  return CAMPAIGNS.find((c) => c.isTrending) || CAMPAIGNS[0];
+export function getCampaign(id: string) {
+  return CAMPAIGNS.find((c) => c.id === id);
 }
 
 // Helper: Get 2 other campaigns for the side slots
@@ -269,6 +263,12 @@ export function getSideCampaigns() {
   return CAMPAIGNS.filter((c) => !c.isTrending).slice(0, 2);
 }
 
-export function getCampaign(id: string) {
-  return CAMPAIGNS.find((c) => c.id === id);
+// Helper: Get the single trending campaign for the center slot
+export function getHeroCampaign() {
+  return CAMPAIGNS.find((c) => c.isTrending) || CAMPAIGNS[0];
+}
+
+// Helper: Get all campaigns for the Explore Page
+export function getAllCampaigns() {
+  return CAMPAIGNS;
 }
