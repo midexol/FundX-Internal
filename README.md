@@ -1,8 +1,3 @@
-
-* **Smart Contract:** Clarity (Stacks 2.5)
-* **Frontend:** Next.js 14, React, Tailwind CSS
-* **Integration:** Stacks.js, Allbridge Core SDK (Widget)
-* **Testing:** Clarinet, Vitest
 # FundX 
 
 **Stable Crowdfunding on Stacks. Powered by USDCx.**
@@ -21,18 +16,8 @@ FundX is a decentralized fundraising platform that solves the "volatility risk" 
 * **SIP-010 Compatible:** Built to the standard Stacks Fungible Token specification.
 
 ## 🏗 Technical Stack
-## ⚡ Quick Start
+* **Smart Contract:** Clarity (Stacks 2.5)
+* **Frontend:** Next.js 14, React, Tailwind CSS
+* **Integration:** Stacks.js, Allbridge Core SDK (Widget)
+* **Testing:** Clarinet, Vitest
 
-### 1. Prerequisites
-* [Clarinet](https://github.com/hirosystems/clarinet)
-* Node.js & NPM
-* Hiro Wallet Extension
-
-### 2. Contract Setup (Local Dev)
-```bash
-# Clone the repo
-git clone [https://github.com/yourusername/fundx.git](https://github.com/yourusername/fundx.git)
-cd fundx
-
-# Run local chain & deploy contracts
-clarinet integrate
