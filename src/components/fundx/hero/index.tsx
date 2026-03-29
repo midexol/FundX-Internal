@@ -24,7 +24,7 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
 
   const { display: scrambledText, scrambleTo } = useScramble()
 
-  const runGlitch = (targetIsStacks: boolean) => {
+  const runGlitch_ = (targetIsStacks: boolean) => {
     if (isGlitchingRef.current) return
     isGlitchingRef.current = true
     setGlitching(true)
@@ -53,12 +53,12 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
   const handleManualToggle = () => {
     if (isGlitchingRef.current) return
     if (intervalRef.current) clearInterval(intervalRef.current)
-    runGlitch(!isStacksModeRef.current)
-    intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch(!isStacksModeRef.current) }, 4500)
+    runGlitch_(!isStacksModeRef.current)
+    intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch_(!isStacksModeRef.current) }, 4500)
   }
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch(!isStacksModeRef.current) }, 4500)
+    intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch_(!isStacksModeRef.current) }, 4500)
     return () => { if (intervalRef.current) clearInterval(intervalRef.current) }
   }, [])
 
@@ -68,7 +68,7 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
       {/* Background logo */}
         <HeroLogoParallax />
 
-      <div_ className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
+      <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
         <HeroBadge />
         <HeroHeadline
           displayStacks={displayStacks}
@@ -85,7 +85,7 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
           Programmable escrow. Stable capital. Conditions enforced on-chain — funds release only when your terms are met.
         </p>
         <HeroCTAs />
-         </div_>
+         </div>
     </section>
   )
 }
