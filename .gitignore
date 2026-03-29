@@ -8,7 +8,7 @@ history.txt
 **/.next/
 out/
 build/
-
+artist.js
 logs
 *.log
 npm-debug.log*
