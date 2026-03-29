@@ -62,7 +62,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
 
         {/* HEADER SECTION */}
         <div className="mb-10 text-center md:text-left">
-          <div className="flex flex-wrap gap-3 justify-center md:justify-start_ mb-4">
+          <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-4">
              <Badge variant="secondary" className="text-orange-600 bg-orange-50 hover:bg-orange-100 px-3 py-1 text-sm border border-orange-100">
                {campaign.category}
              </Badge>
@@ -112,7 +112,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
 
             {/* Content Tabs */}
             <Tabs defaultValue="story" className="w-full">
-              <TabsList className="w-full justify-start_ bg-transparent border-b border-slate-200 rounded-none h-auto p-0 mb-8 overflow-x-auto">
+              <TabsList className="w-full justify-start bg-transparent border-b border-slate-200 rounded-none h-auto p-0 mb-8 overflow-x-auto">
                 <TabsTrigger value="story" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
                   The Story
                 </TabsTrigger>
