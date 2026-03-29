@@ -166,7 +166,7 @@ export default function ExplorePage() {
 
         {/* RESULTS GRID (Staggered Animation) */}
         {filteredCampaigns.length > 0 ? (
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols_-2 xl:grid-cols_-3 gap-8">
             {filteredCampaigns.slice(0, visibleCount).map((campaign, index) => (
               <div 
                 key={campaign.id} 
