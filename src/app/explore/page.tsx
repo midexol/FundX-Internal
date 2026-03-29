@@ -1,17 +1,6 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react"
-import { Navbar } from "@/components/fundx/Navbar"
-import { Footer } from "@/components/fundx/Footer"
-import { CampaignCard } from "@/components/fundx/CampaignCard"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Search, ArrowUp, Sparkles, Filter } from "lucide-react"
-import { CAMPAIGNS, CampaignStatus } from "@/lib/data" // 🚨 Added CampaignStatus import
-
-const CATEGORIES = ["All", "DeFi", "Mining", "Gaming", "Social Impact", "Infrastructure"]
-const STATUSES = ["All", "active", "successful", "failed"] // 🚨 New status array
-
+i
 export default function ExplorePage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
