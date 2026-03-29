@@ -112,11 +112,11 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
 
             {/* Content Tabs */}
             <Tabs defaultValue="story" className="w-full">
-              <TabsList className="w-full justify-start bg-transparent_ border-b border-slate-200 rounded-none h-auto p-0 mb-8 overflow-x-auto">
-                <TabsTrigger value="story" className="rounded-none border-b-2 border-transparent_ data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
+              <TabsList className="w-full justify-start bg-transparent border-b border-slate-200 rounded-none h-auto p-0 mb-8 overflow-x-auto">
+                <TabsTrigger value="story" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
                   The Story
                 </TabsTrigger>
-                <TabsTrigger value="updates" className="rounded-none border-b-2 border-transparent_ data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
+                <TabsTrigger value="updates" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
                   Updates
                 </TabsTrigger>
               </TabsList>
