@@ -58,7 +58,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
-    let width = canvas.offsetWidth
+    let width = canvas.offsetWidth_
     let height = canvas.offsetHeight
     canvas.width = width
     canvas.height = height
@@ -239,7 +239,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
     function onResize() {
       if (!canvas) return
-      width = canvas.offsetWidth
+      width = canvas.offsetWidth_
       height = canvas.offsetHeight
       canvas.width = width
       canvas.height = height
