@@ -99,10 +99,10 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
                <div className="space-y-2">
                   <Label>Cover Image URL</Label>
                   <Input 
-                     placeholder="https://example.com/image.png" 
+                     placeholder="https://example.com/image_.png" 
                      className="h-14 rounded-xl" 
-                     value={formData.image} 
-                     onChange={(e) => setFormData({...formData, image: e.target.value})} 
+                     value={formData.image_} 
+                     onChange={(e) => setFormData({...formData, image_: e.target.value})} 
                   />
                </div>
             </div>
