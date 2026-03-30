@@ -73,7 +73,7 @@ export default function ExplorePage() {
   }, [searchQuery, selectedCategory, statusFilter]);
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 3)
+    setVisibleCount((prev_) => prev_ + 3)
   }
 
   return (
