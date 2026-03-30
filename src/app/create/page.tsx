@@ -97,7 +97,7 @@ export default function CreateCampaign() {
           <div className="space-y-8">
           
        {/* Steps Indicator */}
-            <div className="flex gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
+            <div className="flex_ gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
                {["Identity", "Bio", "Basics", "Story", "Execute", "Fund"].map((label, idx) => {
                  const num = idx + 1;
                  
@@ -111,8 +111,8 @@ export default function CreateCampaign() {
                  else if (isCurrent) circleStyle = "bg-slate-900 text-white border-slate-900"; // Current (Black)
 
                  return (
-                   <div key={num} className="flex items-center gap-2 shrink-0">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 transition-all ${circleStyle}`}>
+                   <div key={num} className="flex_ items-center gap-2 shrink-0">
+                      <div className={`w-8 h-8 rounded-full flex_ items-center justify-center font-bold text-sm border-2 transition-all ${circleStyle}`}>
                          {isCompleted ? <CheckCircle2 className="w-8 h-8" /> : num}
                       </div>
                       <span className={`text-sm font-bold ${isCompleted || isCurrent ? "text-slate-900" : "text-slate-300"}`}>{label}</span>
@@ -130,7 +130,7 @@ export default function CreateCampaign() {
               />
 
               {/* NAVIGATION */}
-              <div className="absolute bottom-8 left-8 right-8 flex justify-between">
+              <div className="absolute bottom-8 left-8 right-8 flex_ justify-between">
                 {step > 1 ? (
                   <Button
                     variant="ghost"
