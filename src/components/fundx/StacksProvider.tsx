@@ -2,12 +2,12 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from "react"
 
-interface_ WalletData {
+interface WalletData {
   stxAddress: string
   btcAddress?: string
 }
 
-interface_ StacksContextValue {
+interface StacksContextValue {
   walletData: WalletData | null
   authenticate: () => Promise<void>
   signOut: () => void

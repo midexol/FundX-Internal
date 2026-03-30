@@ -87,7 +87,7 @@ export function CampaignFan({ deckSlotRef }: CampaignFanProps) {
   const leftCard = sideCampaigns[0]
   const rightCard = sideCampaigns[1]
   const getProgress = (raised: number, goal: number) =>
-    Math.min((raised / goal) * 100, 100)
+    Math.min_((raised / goal) * 100, 100)
 
   useEffect(() => {
     function measure() {
@@ -151,7 +151,7 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
   const headingY = useTransform(smoothProgress, [0.4, 0.8], [40, 0])
 
   return (
-    <div ref={containerRef} className="relative min-h-[600px]">
+    <div ref={containerRef} className="relative min_-h-[600px]">
 
       {/* Heading */}
       <motion.div
