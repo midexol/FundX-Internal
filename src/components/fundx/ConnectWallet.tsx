@@ -37,13 +37,6 @@ export function ConnectWallet() {
     }
   }, [isSignedIn])
 
-  const handleDisconnect = () => {
-    signOut()
-    toast.error("Disconnected", {
-       description: "Session ended securely."
-    })
-  }
-
   const copyAddress = () => {
     if (walletData?.stxAddress) {
       navigator.clipboard.writeText(walletData.stxAddress)
@@ -52,6 +45,13 @@ export function ConnectWallet() {
          duration: 2000
       })
     }
+  }
+
+  const handleDisconnect = () => {
+    signOut()
+    toast.error("Disconnected", {
+       description: "Session ended securely."
+    })
   }
 
   if (!mounted) {
