@@ -119,7 +119,7 @@ export default function ExplorePage() {
              </div>
 
              {/* Category Pills */}
-             <div className="flex gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar_ items-center">
+             <div className="flex gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar items-center">
                 {CATEGORIES.map((cat) => (
                   <button
                     key={cat}
@@ -139,7 +139,7 @@ export default function ExplorePage() {
           </div>
 
           {/* 🚨 ADDED: The Status Filters Row (Sits safely below your original flex row) */}
-          <div className="flex items-center gap-3 mt-2 pt-4 pb-2 px-2 border-t border-slate-200/50 overflow-x-auto no-scrollbar_">
+          <div className="flex items-center gap-3 mt-2 pt-4 pb-2 px-2 border-t border-slate-200/50 overflow-x-auto no-scrollbar">
              <div className="flex items-center gap-2 text-sm font-semibold text-slate-400 whitespace-nowrap">
                <Filter className="w-4 h-4" /> Status:
              </div>
