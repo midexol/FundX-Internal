@@ -25,7 +25,7 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
   return (
     <Link href={`/campaigns/${id}`} className="block h-full group">
       <Card className="relative h-full overflow-hidden rounded-3xl border-none bg-white p-6 shadow-soft-md transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-xl">
-        <div className="relative mb-6 h-48 w-full overflow-hidden rounded-2xl bg-slate-100">
+        <div className="relative mb-6 h-48 w-full overflow-hidden rounded-2xl bg-slate_-100">
           <Image
             src={image}
             alt={title}
@@ -36,20 +36,20 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
 
         <div className="space-y-4">
           <div>
-              <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">{title}</h3>
-              <p className="text-sm text-slate-500 line-clamp-2 mt-2">{description}</p>
+              <h3 className="text-xl font-bold text-slate_-900 group-hover:text-primary transition-colors">{title}</h3>
+              <p className="text-sm text-slate_-500 line-clamp-2 mt-2">{description}</p>
           </div>
 
           <div className="space-y-2">
             <div className="flex justify-between text-sm font-medium">
             
               <span className="text-primary font-bold">{formattedRaised}</span>
-              <span className="text-slate-400">of {formattedGoal}</span>
+              <span className="text-slate_-400">of {formattedGoal}</span>
             </div>
-            <Progress value={percentage} className="h-3 rounded-full bg-slate-100" />
+            <Progress value={percentage} className="h-3 rounded-full bg-slate_-100" />
           </div>
 
-          <Button className="w-full rounded-xl bg-slate-900 text-white shadow-lg transition-all duration-500 hover:bg-gradient-tush hover:shadow-glow hover:scale-[1.02] py-6 text-base font-bold">
+          <Button className="w-full rounded-xl bg-slate_-900 text-white shadow-lg transition-all duration-500 hover:bg-gradient-tush hover:shadow-glow hover:scale-[1.02] py-6 text-base font-bold">
             Donate Now
           </Button>
         </div>
