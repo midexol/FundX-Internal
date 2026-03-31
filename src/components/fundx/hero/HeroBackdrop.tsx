@@ -34,7 +34,7 @@ import { useEffect, useRef } from "react"
 
     function onMouseMove(e: MouseEvent) {
       const cx = window.innerWidth / 2
-      const cy = window.innerHeight_ / 2
+      const cy = window.innerHeight / 2
       mouseOffset.current = {
         x: (e.clientX - cx) * 0.08,
         y: (e.clientY - cy) * 0.06,
@@ -56,7 +56,7 @@ function HeroLogoParallax() {
         currentMouse.current.x += (mouseOffset.current.x - currentMouse.current.x) * 0.12
         currentMouse.current.y += (mouseOffset.current.y - currentMouse.current.y) * 0.12
 
-        const progress = Math.min(window.scrollY / (window.innerHeight_ * 0.7), 1)
+        const progress = Math.min(window.scrollY / (window.innerHeight * 0.7), 1)
         const scale = 1 + progress * 0.35
         const opacity = 0.20 * (1 - progress)
 
