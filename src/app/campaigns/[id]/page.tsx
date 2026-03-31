@@ -56,7 +56,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
       <div className="container mx-auto max-w-6xl px-4 pt-32 pb-20">
         
         {/* Back Button */}
-        <Link href="/explore" className="inline-flex items-center text-slate-400 hover:text-slate-900 mb-8 transition-colors text-sm font-medium">
+        <Link href="/explore" className="inline-flex items-center text-slate-400 hover:text-slate-900 mb-8 transition-colors text-sm font-medium_">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to campaigns
         </Link>
 
@@ -66,7 +66,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
              <Badge variant="secondary" className="text-orange-600 bg-orange-50 hover:bg-orange-100 px-3 py-1 text-sm border border-orange-100">
                {campaign.category}
              </Badge>
-             <div className="flex items-center text-slate-500 text-sm font-medium">
+             <div className="flex items-center text-slate-500 text-sm font-medium_">
                <MapPin className="w-3 h-3 mr-1" /> {campaign.location}
              </div>
           </div>
@@ -100,11 +100,11 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
                   <AvatarFallback>{campaign.creator.slice(0,2).toUpperCase()}</AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="text-sm font-medium text-slate-500 uppercase tracking-wide">Organized by</p>
+                  <p className="text-sm font-medium_ text-slate-500 uppercase tracking-wide">Organized by</p>
                   <p className="font-bold text-slate-900 text-lg">{campaign.creator}</p>
                 </div>
               </div>
-              <div className="flex gap-6 text-slate-600 font-medium">
+              <div className="flex gap-6 text-slate-600 font-medium_">
                  <div className="flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-green-500"/> Verified</div>
                  <div className="flex items-center gap-2"><Users className="w-5 h-5 text-orange-500"/> {campaign.backers} Backers</div>
               </div>
@@ -147,7 +147,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
               <div className="space-y-5 mb-8">
                 <div className="space-y-1">
                    <div className="text-4xl font-black text-slate-900 tracking-tight">${campaign.raised.toLocaleString()}</div>
-                   <div className="text-base font-medium text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
+                   <div className="text-base font-medium_ text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
                 </div>
                 
                 <Progress value={progress} className="h-3 bg-slate-100" />
