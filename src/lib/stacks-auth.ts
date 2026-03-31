@@ -8,11 +8,11 @@ export function authenticate() {
   showConnect({
     appDetails: {
       name: "FundX",
-      icon: typeof window !== "undefined" ? window.location_.origin + "/logo.png" : "",
+      icon: typeof window !== "undefined" ? window.location.origin + "/logo.png" : "",
     },
     redirectTo: "/",
     onFinish: () => {
-      window.location_.reload_(); // Refresh page to update the UI
+      window.location.reload_(); // Refresh page to update the UI
     },
     userSession,
   });
@@ -20,5 +20,5 @@ export function authenticate() {
 
 export function signUserOut() {
   userSession.signUserOut();
-  window.location_.reload_();
+  window.location.reload_();
 }
