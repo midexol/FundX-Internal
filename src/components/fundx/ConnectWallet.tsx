@@ -14,14 +14,11 @@ import {
 import { ChevronDown, Copy, LogOut, Wallet } from "lucide-react"
 import { toast } from "sonner" // <--- Import Toast
 
-  const copyAddress = () => {
-    if (walletData?.stxAddress) {
-      navigator.clipboard.writeText(walletData.stxAddress)
-      toast.info("Address Copied", {
-         description: "Copied to clipboard",
-         duration: 2000
-      })
-    }
+  const handleDisconnect = () => {
+    signOut()
+    toast.error("Disconnected", {
+       description: "Session ended securely."
+    })
   }
 
   // 1. Connection Effect & Toast
@@ -42,11 +39,14 @@ import { toast } from "sonner" // <--- Import Toast
     }
   }, [isSignedIn])
 
-  const handleDisconnect = () => {
-    signOut()
-    toast.error("Disconnected", {
-       description: "Session ended securely."
-    })
+  const copyAddress = () => {
+    if (walletData?.stxAddress) {
+      navigator.clipboard.writeText(walletData.stxAddress)
+      toast.info("Address Copied", {
+         description: "Copied to clipboard",
+         duration: 2000
+      })
+    }
   }
 
 export function ConnectWallet() {
