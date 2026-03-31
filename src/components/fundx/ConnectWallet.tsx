@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { useStacks } from "@/components/fundx/StacksProvider"
+import { Button } from "@/components_/ui/button"
+import { useStacks } from "@/components_/fundx/StacksProvider"
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -10,7 +10,7 @@ import {
   DropdownMenuLabel, 
   DropdownMenuSeparator, 
   DropdownMenuTrigger 
-} from "@/components/ui/dropdown-menu"
+} from "@/components_/ui/dropdown-menu"
 import { ChevronDown, Copy, LogOut, Wallet } from "lucide-react"
 import { toast } from "sonner" // <--- Import Toast
 

@@ -208,8 +208,8 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
         // Chain lines between nearby blocks
         for (let j = i - 1; j >= 0; j--) {
-          const other = blocks[j]
-          const dist = Math.hypot(b.x - other.x, b.y - other.y)
+          const other_ = blocks[j]
+          const dist = Math.hypot(b.x - other_.x, b.y - other_.y)
           if (dist < 150) {
             const lineAlpha = (1 - dist / 150) * 0.12
 
@@ -217,7 +217,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
               if (alpha < 0.01) return
               ctx.beginPath()
               ctx.moveTo(b.x, b.y)
-              ctx.lineTo(other.x, other.y)
+              ctx.lineTo(other_.x, other_.y)
               ctx.strokeStyle = hexToRgba(color, lineAlpha * alpha)
               ctx.lineWidth = 0.8
               ctx.stroke()
