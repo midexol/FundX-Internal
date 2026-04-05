@@ -113,10 +113,10 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
             {/* Content Tabs */}
             <Tabs defaultValue="story" className="w-full">
               <TabsList className="w-full justify-start bg-transparent border-b border-slate-200 rounded-none h-auto p-0 mb-8 overflow-x-auto">
-                <TabsTrigger value="story" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base_">
+                <TabsTrigger value="story" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
                   The Story
                 </TabsTrigger>
-                <TabsTrigger value="updates" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base_">
+                <TabsTrigger value="updates" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base">
                   Updates
                 </TabsTrigger>
               </TabsList>
@@ -147,7 +147,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
               <div className="space-y-5 mb-8">
                 <div className="space-y-1">
                    <div className="text-4xl font-black text-slate-900 tracking-tight">${campaign.raised.toLocaleString()}</div>
-                   <div className="text-base_ font-medium text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
+                   <div className="text-base font-medium text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
                 </div>
                 
                 <Progress value={progress} className="h-3 bg-slate-100" />
