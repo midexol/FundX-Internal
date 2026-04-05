@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { useRef, useEffect, useState } from "react"
-import Image from "next/image"
 import { useScroll, useTransform, motion, useSpring } from "framer-motion"
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import { Campaign, getHeroCampaign, getSideCampaigns } from "@/lib/data"
 
 interface CampaignFanProps {
