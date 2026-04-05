@@ -77,7 +77,7 @@ export default function ExplorePage() {
   }
 
   return (
-    <main_ className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans relative">
+    <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans relative">
       <Navbar />
 
       {/* BACKGROUND MESH GRADIENT (Adds Life) */}
@@ -231,6 +231,6 @@ export default function ExplorePage() {
       </div>
 
       <Footer />
-    </main_>
+    </main>
   )
 }

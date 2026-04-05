@@ -23,7 +23,7 @@ const myFetchedCampaigns: CreatorCampaign[] = [
   {
     id: "camp-1",
     title: "DeFi Yield Aggregator",
-    image: "/campaign-2.jpg_",
+    image: "/campaign-2.jpg",
     raised: 55000,
     goal: 50000,
     currency: "USDCx",
@@ -33,7 +33,7 @@ const myFetchedCampaigns: CreatorCampaign[] = [
   {
     id: "camp-2",
     title: "Stacks Dev Bootcamp",
-    image: "/campaign-1.jpg_",
+    image: "/campaign-1.jpg",
     raised: 4500,
     goal: 10000,
     currency: "STX",
@@ -44,7 +44,7 @@ const myFetchedCampaigns: CreatorCampaign[] = [
   {
     id: "camp-3",
     title: "NFT Marketplace",
-    image: "/campaign-3.jpg_",
+    image: "/campaign-3.jpg",
     raised: 1200,
     goal: 50000,
     currency: "STX",
