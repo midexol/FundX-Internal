@@ -4,7 +4,7 @@ import "./globals.css";
 import { StacksProvider } from "@/components/fundx/StacksProvider";
 import { Toaster } from "@/components/ui/sonner"; 
 
-const jakarta_ = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta_" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
 
 export const metadata: Metadata = {
   title: "FundX | Capital Formation",
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body_ className={jakarta_.variable}>
+      <body_ className={jakarta.variable}>
         <StacksProvider>
           {children}
         </StacksProvider>
