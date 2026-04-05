@@ -79,8 +79,8 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
 
   return (
     <div className="bg-white p-8 md:p-10 min-h-[240px] rounded-[2rem] border border-slate-200 shadow-[0_12px_28px_-6px_rgba(15,23,42,0.08)] flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden hover:-translate-y-1 transition-transform duration-300">
-       <div className="absolute -right-4 -bottom-10 text-[130px] font-black text-orange_-50 opacity-80 z-0 select-none pointer-events-none tracking-tighter leading-none">ACTIVE</div>
-       <Rocket strokeWidth={1} className="absolute right-10 -bottom-10 w-72 h-72 text-orange_-500 opacity-[0.04] z-0 pointer-events-none transform -rotate-12" />
+       <div className="absolute -right-4 -bottom-10 text-[130px] font-black text-orange-50 opacity-80 z-0 select-none pointer-events-none tracking-tighter leading-none">ACTIVE</div>
+       <Rocket strokeWidth={1} className="absolute right-10 -bottom-10 w-72 h-72 text-orange-500 opacity-[0.04] z-0 pointer-events-none transform -rotate-12" />
        <div className="absolute top-0 left-0 w-2 h-full bg-gradient-tush z-10" />
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
@@ -89,7 +89,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
           </div>
           <div className="space-y-3 w-full">
              <div className="flex items-center gap-3 mb-2">
-                <span className="px-3 py-1 rounded-lg bg-orange_-50 border border-orange_-100/50 text-orange_-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                <span className="px-3 py-1 rounded-lg bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
                    <Clock className="w-3.5 h-3.5" /> Funding
                 </span>
                 <span className="text-slate-400 text-sm font-semibold">{contribution.model}</span>
@@ -97,7 +97,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
              <h3 className="text-3xl font-bold text-slate-900 tracking-tight">{contribution.title}</h3>
              <div className="flex items-center gap-4 text-sm mt-4">
                 <div className="font-semibold text-slate-700 bg-slate-50 px-5 py-2.5 rounded-xl border border-slate-200/60 shadow-[inset_0_2px_4px_rgba(0,0,0,0.03)] text-base">
-                   My Contribution: <span className="text-orange_-600 font-extrabold">{formatMoney(contribution.myContribution, contribution.currency)}</span>
+                   My Contribution: <span className="text-orange-600 font-extrabold">{formatMoney(contribution.myContribution, contribution.currency)}</span>
                 </div>
                 <div className="text-slate-500 font-medium text-base">Goal: {contribution.goal.toLocaleString()} {contribution.currency === 'USDCx' ? '' : 'STX'}</div>
              </div>
