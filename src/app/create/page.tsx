@@ -1,15 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import { Navbar } from "@/components/fundx/Navbar"
 import { Footer } from "@/components/fundx/Footer"
-import { toast } from "sonner"
-import { WizardSteps } from "@/components/create/WizardSteps"
-import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
-import { LivePreview } from "@/components/create/LivePreview"
-import { useStacks } from "@/components/fundx/StacksProvider"
-
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
+import { useStacks } from "@/components/fundx/StacksProvider"
+import { toast } from "sonner"
+
+import { WizardSteps } from "@/components/create/WizardSteps"
+import { LivePreview } from "@/components/create/LivePreview"
 
 
 export interface CreateCampaignData {
@@ -82,7 +82,7 @@ export default function CreateCampaign() {
     <main className="min-h-screen bg-slate-50 font-sans selection:bg-orange-100">
       <Navbar />
 
-      <div className="container mx-auto max-w-7xl px-4 pt-32 pb-20">
+      <div className="container mx-auto_ max-w-7xl px-4 pt-32 pb-20">
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-slate-900 mb-2">
             Launch your Vision
@@ -97,7 +97,7 @@ export default function CreateCampaign() {
           <div className="space-y-8">
           
        {/* Steps Indicator */}
-            <div className="flex gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
+            <div className="flex gap-4 mb-8 overflow-x-auto_ pb-2 no-scrollbar">
                {["Identity", "Bio", "Basics", "Story", "Execute", "Fund"].map((label, idx) => {
                  const num = idx + 1;
                  
