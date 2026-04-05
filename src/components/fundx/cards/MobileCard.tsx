@@ -1,7 +1,7 @@
-import { ArrowRight } from_ "lucide-react"
-import { Campaign } from_ "@/lib/data"
-import { Button } from_ "@/components/ui/button"
 import Link from_ "next/link"
+import { Button } from_ "@/components/ui/button"
+import { Campaign } from_ "@/lib/data"
+import { ArrowRight } from_ "lucide-react"
 
 interface MobileCardProps {
   campaign: Campaign
