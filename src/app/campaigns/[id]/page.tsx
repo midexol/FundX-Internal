@@ -85,7 +85,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
           <div className="lg:col-span-2 space-y-10">
             
             {/* Hero Image */}
-            <div className="relative aspect-video w-full overflow-hidden rounded-3xl bg-slate-200 shadow-sm border border-slate-100 group">
+            <div className="relative aspect-video w-full overflow-hidden rounded-3xl bg-slate-200 shadow_-sm border border-slate-100 group">
                <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-bold bg-slate-100">
                  {/* In production, replace this text with <Image src={campaign.image} ... /> */}
                  [Image: {campaign.title}]
@@ -95,7 +95,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
             {/* Creator Profile */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between border-y border-slate-200 py-6 gap-4">
               <div className="flex items-center gap-4">
-                <Avatar className="h-14 w-14 border-4 border-white shadow-sm">
+                <Avatar className="h-14 w-14 border-4 border-white shadow_-sm">
                   <AvatarImage src={campaign.creatorImage} />
                   <AvatarFallback>{campaign.creator.slice(0,2).toUpperCase()}</AvatarFallback>
                 </Avatar>
@@ -142,7 +142,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
 
      
           <div className="relative h-full">
-            <div className="sticky top-32 p-8 rounded-[2rem] bg-white border border-slate-200 shadow-xl">
+            <div className="sticky top-32 p-8 rounded-[2rem] bg-white border border-slate-200 shadow_-xl">
               
               <div className="space-y-5 mb-8">
                 <div className="space-y-1">
@@ -182,11 +182,11 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 {isSignedIn ? (
-                  <Button onClick={handleDonate} className="w-full h-14 rounded-xl bg-gradient-tush text-white shadow-glow hover:scale-[1.02] transition-transform text-lg font-bold">
+                  <Button onClick={handleDonate} className="w-full h-14 rounded-xl bg-gradient-tush text-white shadow_-glow hover:scale-[1.02] transition-transform text-lg font-bold">
                     Donate Now
                   </Button>
                 ) : (
-                  <Button onClick={authenticate} className="w-full h-14 rounded-xl bg-slate-900 text-white shadow-xl hover:bg-slate-800 transition-all text-lg font-bold">
+                  <Button onClick={authenticate} className="w-full h-14 rounded-xl bg-slate-900 text-white shadow_-xl hover:bg-slate-800 transition-all text-lg font-bold">
                     Connect Wallet to Contribute
                   </Button>
                 )}
