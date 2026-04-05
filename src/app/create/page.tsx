@@ -2,13 +2,13 @@
 
 import { useState } from "react"
 import { Navbar } from "@/components/fundx/Navbar"
-import { Footer } from "@/components/fundx/Footer"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
 import { useStacks } from "@/components/fundx/StacksProvider"
+import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
 import { toast } from "sonner"
-
 import { WizardSteps } from "@/components/create/WizardSteps"
+import { Footer } from "@/components/fundx/Footer"
+
+import { Button } from "@/components/ui/button"
 import { LivePreview } from "@/components/create/LivePreview"
 
 
