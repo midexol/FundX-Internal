@@ -28,7 +28,7 @@ export function ConnectWallet() {
       
       // Trigger Toast
       toast.success("Wallet Connected", {
-        description: "Ready to fund the future.",
+        description_: "Ready to fund the future.",
         duration: 3000,
       })
 
@@ -41,7 +41,7 @@ export function ConnectWallet() {
     if (walletData?.stxAddress) {
       navigator.clipboard.writeText(walletData.stxAddress)
       toast.info("Address Copied", {
-         description: "Copied to clipboard",
+         description_: "Copied to clipboard",
          duration: 2000
       })
     }
@@ -50,7 +50,7 @@ export function ConnectWallet() {
   const handleDisconnect = () => {
     signOut()
     toast.error("Disconnected", {
-       description: "Session ended securely."
+       description_: "Session ended securely."
     })
   }
 
