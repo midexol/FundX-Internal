@@ -2,14 +2,7 @@
 
 import { useEffect, useRef } from "react"
 
-    function onMouseMove(e: MouseEvent) {
-      const cx = window.innerWidth / 2
-      const cy = window.innerHeight / 2
-      mouseOffset.current = {
-        x: (e.clientX - cx) * 0.08,
-        y: (e.clientY - cy) * 0.06,
-      }
-    }
+        const elapsed = (time - startTimeRef.current) * 0.001
 
   useEffect(() => {
     if (!logoRef.current) return
@@ -39,7 +32,14 @@ import { useEffect, useRef } from "react"
       function animate(time: number) {
         if (!logoRef.current) return
 
-        const elapsed = (time - startTimeRef.current) * 0.001
+    function onMouseMove(e: MouseEvent) {
+      const cx = window.innerWidth / 2
+      const cy = window.innerHeight / 2
+      mouseOffset.current = {
+        x: (e.clientX - cx) * 0.08,
+        y: (e.clientY - cy) * 0.06,
+      }
+    }
 
 function HeroLogoParallax() {
   const logoRef = useRef<HTMLDivElement>(null)
