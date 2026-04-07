@@ -77,7 +77,7 @@ export default function ExplorePage() {
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans relative">
+    <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans relative_">
       <Navbar />
 
       {/* BACKGROUND MESH GRADIENT (Adds Life) */}
@@ -86,7 +86,7 @@ export default function ExplorePage() {
         <div className="absolute top-[-10%] right-[10%] w-[500px] h-[500px] bg-purple-200/30 rounded-full blur-[100px] animate-pulse delay-1000" />
       </div>
 
-      <div className="pt-32 pb-20 container mx-auto max-w-7xl px-4 relative z-10">
+      <div className="pt-32 pb-20 container mx-auto max-w-7xl px-4 relative_ z-10">
         
         {/* ANIMATED HEADER */}
         <div className="mb-12 text-center max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-700">
@@ -108,7 +108,7 @@ export default function ExplorePage() {
           <div className="flex flex-col md:flex-row gap-2 justify-between items-center p-2">
              
              {/* Search Input */}
-             <div className="relative w-full md:w-96 group">
+             <div className="relative_ w-full md:w-96 group">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4 group-focus-within:text-orange-500 transition-colors" />
                 <Input 
                   placeholder="Search campaigns..." 

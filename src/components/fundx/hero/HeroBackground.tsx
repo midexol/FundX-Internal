@@ -34,21 +34,19 @@ interface Block {
   pulsePhase: number
 }
 
-    function createBlock(x: number, y: number): Block {
-      return {
-        x,
-        y,
-        size: 20 + Math.random() * 28,
-        opacity: 0,
-        life: 0,
-        maxLife: 180 + Math.random() * 120,
-        pulsePhase: Math.random() * Math.PI * 2,
-      }
-    }
+function hexToRgba(hex: string, alpha: number) {
+  const r = parseInt(hex.slice(1, 3), 16)
+  const g = parseInt(hex.slice(3, 5), 16)
+  const b = parseInt(hex.slice(5, 7), 16)
+  return `rgba(${r},${g},${b},${alpha})`
+}
 
-    function draw() {
-      if (!ctx || !canvas) return
-      ctx.clearRect(0, 0, width, height)
+export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const isStacksModeRef = useRef(isStacksMode)
+  const rafRef = useRef<number>(0)
+  const targetOpacityRef = useRef(isStacksMode ? 1 : 0)
+  const currentOpacityRef = useRef(isStacksMode ? 1 : 0)
 
   useEffect(() => {
     isStacksModeRef.current = isStacksMode
@@ -68,18 +66,32 @@ interface Block {
     const streams: Stream[] = []
     const blocks: Block[] = []
 
-            const drawLine = (color: string, alpha: number) => {
-              if (alpha < 0.01) return
-              ctx.beginPath()
-              ctx.moveTo(b.x, b.y)
-              ctx.lineTo(other.x, other.y)
-              ctx.strokeStyle = hexToRgba(color, lineAlpha * alpha)
-              ctx.lineWidth = 0.8
-              ctx.stroke()
-            }
+    function createStream(startY?: number): Stream {
+      return {
+        x: Math.random() * width,
+        y: startY ?? -50,
+        length: 100 + Math.random() * 150,
+        speed: 0.5 + Math.random() * 0.7,
+        opacity: 0.18 + Math.random() * 0.18,
+        width: 1 + Math.random() * 1.5,
+        units: Array.from({ length: 5 + Math.floor(Math.random() * 4) }, () => ({
+          offset: Math.random(),
+          size: 2.5 + Math.random() * 3,
+        })),
+      }
+    }
 
-        const drawBlock = (color: string, alpha: number) => {
-          if (alpha < 0.01) return
+    function createBlock(x: number, y: number): Block {
+      return {
+        x,
+        y,
+        size: 20 + Math.random() * 28,
+        opacity: 0,
+        life: 0,
+        maxLife: 180 + Math.random() * 120,
+        pulsePhase: Math.random() * Math.PI * 2,
+      }
+    }
 
     // Seed initial streams spread across the canvas
     for (let i = 0; i < 14; i++) {
@@ -89,13 +101,9 @@ interface Block {
 
     let frame = 0
 
-    function onResize() {
-      if (!canvas) return
-      width = canvas.offsetWidth
-      height = canvas.offsetHeight
-      canvas.width = width
-      canvas.height = height
-    }
+    function draw() {
+      if (!ctx || !canvas) return
+      ctx.clearRect(0, 0, width, height)
 
       const isStacks = isStacksModeRef.current
       const colors = isStacks ? STACKS_COLORS : BITCOIN_COLORS
@@ -120,15 +128,15 @@ interface Block {
         // Draw stream using blended color
         const drawStream = (color: string, alpha: number) => {
           if (alpha < 0.01) return
-          const grad = ctx.createLinearGradient(s.x, s.y - s.length, s.x, s.y)
-          grad.addColorStop(0, "transparent")
-          grad.addColorStop(0.3, hexToRgba(color, s.opacity * alpha))
-          grad.addColorStop(0.7, hexToRgba(color, s.opacity * alpha * 0.8))
-          grad.addColorStop(1, "transparent")
+          const grad_ = ctx.createLinearGradient(s.x, s.y - s.length, s.x, s.y)
+          grad_.addColorStop(0, "transparent")
+          grad_.addColorStop(0.3, hexToRgba(color, s.opacity * alpha))
+          grad_.addColorStop(0.7, hexToRgba(color, s.opacity * alpha * 0.8))
+          grad_.addColorStop(1, "transparent")
           ctx.beginPath()
           ctx.moveTo(s.x, s.y - s.length)
           ctx.lineTo(s.x, s.y)
-          ctx.strokeStyle = grad
+          ctx.strokeStyle = grad_
           ctx.lineWidth = s.width
           ctx.stroke()
 
@@ -172,12 +180,8 @@ interface Block {
         const pulse = Math.sin(b.pulsePhase) * 0.06
         b.opacity = baseOpacity + pulse
 
-export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const isStacksModeRef = useRef(isStacksMode)
-  const rafRef = useRef<number>(0)
-  const targetOpacityRef = useRef(isStacksMode ? 1 : 0)
-  const currentOpacityRef = useRef(isStacksMode ? 1 : 0)
+        const drawBlock = (color: string, alpha: number) => {
+          if (alpha < 0.01) return
 
           // Glow
           ctx.shadowBlur = 16
@@ -209,12 +213,15 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           if (dist < 150) {
             const lineAlpha = (1 - dist / 150) * 0.12
 
-function hexToRgba(hex: string, alpha: number) {
-  const r = parseInt(hex.slice(1, 3), 16)
-  const g = parseInt(hex.slice(3, 5), 16)
-  const b = parseInt(hex.slice(5, 7), 16)
-  return `rgba(${r},${g},${b},${alpha})`
-}
+            const drawLine = (color: string, alpha: number) => {
+              if (alpha < 0.01) return
+              ctx.beginPath()
+              ctx.moveTo(b.x, b.y)
+              ctx.lineTo(other.x, other.y)
+              ctx.strokeStyle = hexToRgba(color, lineAlpha * alpha)
+              ctx.lineWidth = 0.8
+              ctx.stroke()
+            }
 
             drawLine(BITCOIN_COLORS.block, bitcoinAlpha)
             drawLine(STACKS_COLORS.block, stacksAlpha)
@@ -230,19 +237,12 @@ function hexToRgba(hex: string, alpha: number) {
 
     draw()
 
-    function createStream(startY?: number): Stream {
-      return {
-        x: Math.random() * width,
-        y: startY ?? -50,
-        length: 100 + Math.random() * 150,
-        speed: 0.5 + Math.random() * 0.7,
-        opacity: 0.18 + Math.random() * 0.18,
-        width: 1 + Math.random() * 1.5,
-        units: Array.from({ length: 5 + Math.floor(Math.random() * 4) }, () => ({
-          offset: Math.random(),
-          size: 2.5 + Math.random() * 3,
-        })),
-      }
+    function onResize() {
+      if (!canvas) return
+      width = canvas.offsetWidth
+      height = canvas.offsetHeight
+      canvas.width = width
+      canvas.height = height
     }
 
     window.addEventListener("resize", onResize)
