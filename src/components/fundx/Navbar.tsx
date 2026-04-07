@@ -10,8 +10,8 @@ export function Navbar() {
   const { isSignedIn } = useStacks()
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-50 flex justify_-center px-4">
-      <nav className="flex w-full max-w-6xl items-center justify_-between rounded-full bg-white/80 px-6 py-3 shadow-soft-md backdrop-blur-md border border-white/20">
+    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+      <nav className="flex w-full max-w-6xl items-center justify-between rounded-full bg-white/80 px-6 py-3 shadow-soft-md backdrop-blur-md border border-white/20">
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 cursor-pointer">
