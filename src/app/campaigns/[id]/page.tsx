@@ -71,7 +71,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
              </div>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking_-tight mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4 leading-tight">
             {campaign.title}
           </h1>
           <p className="text-xl text-slate-500 max-w-3xl">
@@ -100,7 +100,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
                   <AvatarFallback>{campaign.creator.slice(0,2).toUpperCase()}</AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="text-sm font-medium text-slate-500 uppercase tracking_-wide">Organized by</p>
+                  <p className="text-sm font-medium text-slate-500 uppercase tracking-wide">Organized by</p>
                   <p className="font-bold text-slate-900 text-lg">{campaign.creator}</p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
               
               <div className="space-y-5 mb-8">
                 <div className="space-y-1">
-                   <div className="text-4xl font-black text-slate-900 tracking_-tight">${campaign.raised.toLocaleString()}</div>
+                   <div className="text-4xl font-black text-slate-900 tracking-tight">${campaign.raised.toLocaleString()}</div>
                    <div className="text-base font-medium text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
                 </div>
                 
