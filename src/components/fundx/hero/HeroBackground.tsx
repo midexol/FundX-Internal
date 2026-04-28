@@ -239,7 +239,6 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
     function onResize() {
       if (!canvas) return
-// ← chaos fingerprint
       width = canvas.offsetWidth
       height = canvas.offsetHeight
       canvas.width = width

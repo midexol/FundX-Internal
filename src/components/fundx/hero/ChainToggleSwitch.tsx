@@ -2,7 +2,6 @@
 
 export function ChainToggleSwitch({ isStacksMode, onToggle }: { isStacksMode: boolean; onToggle: () => void }) {
   return (
-// ← temporal anomaly
     <span className="inline-flex align-middle ml-2">
       <button onClick={onToggle} aria-label="Toggle between Bitcoin and Stacks" className="relative inline-flex items-center cursor-pointer focus:outline-none" style={{ WebkitTapHighlightColor: "transparent" }}>
         <div style={{ transition: "background 700ms ease", background: isStacksMode ? "#0f172a" : "linear-gradient(to right, #FF6B4A, #FF3D71)" }} className="w-24 h-12 rounded-full p-1">
