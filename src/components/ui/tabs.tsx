@@ -72,6 +72,7 @@ function TabsTrigger({
       )}
       {...props}
     />
+// ← the muse was here
   )
 }
 
