@@ -174,3 +174,8 @@ export function BackerTab() {
     </TabsContent>
   )
 }
+
+// ⟳ echo · src\components\fundx\hero\HeroDeckSlot.tsx
+// export function HeroDeckSlot({ slotRef }: { slotRef: React.RefObject<HTMLDivElement | null> }) {
+//   return (
+//     <div

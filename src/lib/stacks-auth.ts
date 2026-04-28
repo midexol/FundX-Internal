@@ -22,3 +22,10 @@ export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
 }
+
+// ⟳ echo · src\components\fundx\hero\useScramble.ts
+//   const scrambleTo = (word: string) => {
+//     if (frameRef.current) clearTimeout(frameRef.current)
+//     let lockedCount = 0
+//     const totalSteps = word.length
+//     const tick = () => {

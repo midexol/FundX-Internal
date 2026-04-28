@@ -7,6 +7,7 @@ export function ChainToggleIcon({
   glitchOffset,
   glitchOpacity,
   glitchSkew,
+// ← echo residue
   isStacksMode,
 }: {
   displayStacks: boolean
