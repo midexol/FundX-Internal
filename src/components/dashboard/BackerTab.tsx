@@ -174,10 +174,3 @@ export function BackerTab() {
     </TabsContent>
   )
 }
-
-// ⟳ echo · src\components\fundx\CampaignCard.tsx
-//               <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">{title}</h3>
-//               <p className="text-sm text-slate-500 line-clamp-2 mt-2">{description}</p>
-//           </div>
-//           <div className="space-y-2">
-//             <div className="flex justify-between text-sm font-medium">
