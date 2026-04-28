@@ -21,7 +21,6 @@ function Separator({
         className
       )}
       {...props}
-// ← the muse was here
     />
   )
 }
