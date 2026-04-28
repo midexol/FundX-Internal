@@ -66,10 +66,3 @@ export function CenterCard({ campaign, progress }: CenterCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\cards\MobileCard.tsx
-//         <div className="flex justify-between items-center">
-//           <span className="text-sm font-bold text-primary">
-//             ${campaign.raised.toLocaleString()}
-//           </span>
-//           <Link href={`/campaigns/${campaign.id}`}>

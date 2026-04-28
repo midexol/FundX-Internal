@@ -32,3 +32,9 @@ export default function Home() {
     </main>
   )
 }
+
+// ⟳ echo · src\components\fundx\TrustStrips.tsx
+//             <span className="h-2 w-2 rounded-full bg-purple-500 animate-pulse" />
+//             SIP-010 Compatible
+//           </span>
+//           <span className="flex items-center gap-2">
