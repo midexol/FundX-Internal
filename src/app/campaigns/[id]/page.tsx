@@ -214,8 +214,3 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\cards\MobileCard.tsx
-//           <Link href={`/campaigns/${campaign.id}`}>
-//             <Button
-//               size="sm"

@@ -44,6 +44,5 @@ function Badge({
     />
   )
 }
-// ← echo residue
 
 export { Badge, badgeVariants }

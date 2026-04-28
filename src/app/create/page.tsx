@@ -1,15 +1,15 @@
 "use client"
 
-import { toast } from "sonner"
-import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
-import { Footer } from "@/components/fundx/Footer"
 import { Navbar } from "@/components/fundx/Navbar"
-import { LivePreview } from "@/components/create/LivePreview"
+import { Footer } from "@/components/fundx/Footer"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react"
 import { useStacks } from "@/components/fundx/StacksProvider"
+import { toast } from "sonner"
 
 import { WizardSteps } from "@/components/create/WizardSteps"
-import { Button } from "@/components/ui/button"
+import { LivePreview } from "@/components/create/LivePreview"
 
 
 export interface CreateCampaignData {
