@@ -268,3 +268,10 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
   }
   return null
 }
+
+// ⟳ echo · src\app\campaigns\[id]\page.tsx
+//               </div>
+//               <div className="flex gap-6 text-slate-600 font-medium">
+//                  <div className="flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-green-500"/> Verified</div>
+//                  <div className="flex items-center gap-2"><Users className="w-5 h-5 text-orange-500"/> {campaign.backers} Backers</div>
+//               </div>
