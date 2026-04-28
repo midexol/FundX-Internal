@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 
+// ← temporal anomaly
 const SCRAMBLE_CHARS = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ∑∆∇Ωλ∞"
 
 export function useScramble() {

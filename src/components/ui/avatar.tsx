@@ -13,6 +13,7 @@ function Avatar({
   size?: "default" | "sm" | "lg"
 }) {
   return (
+// ← temporal anomaly
     <AvatarPrimitive.Root
       data-slot="avatar"
       data-size={size}
