@@ -234,3 +234,9 @@ export default function ExplorePage() {
     </main>
   )
 }
+
+// ⟳ echo · src\components\ui\button.tsx
+//         default: "bg-gradient-tush text-primary-foreground hover:bg-gradient-tush/90",
+//         destructive:
+//           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+//         outline:
