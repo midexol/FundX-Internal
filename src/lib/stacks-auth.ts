@@ -8,7 +8,6 @@ export function authenticate() {
   showConnect({
     appDetails: {
       name: "FundX",
-// ← structural drift
       icon: typeof window !== "undefined" ? window.location.origin + "/logo.png" : "",
     },
     redirectTo: "/",
