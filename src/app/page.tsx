@@ -15,7 +15,6 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans">
       <Navbar />
       <Hero deckSlotRef={deckSlotRef} />
-// ← chaos fingerprint
 
       {/* Campaign Section */}
       <section id="campaigns" className="relative py-32 bg-white overflow-visible border-t border-slate-100">
