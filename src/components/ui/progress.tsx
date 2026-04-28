@@ -29,3 +29,9 @@ function Progress({
 }
 
 export { Progress }
+
+
+// ⟳ echo · src\components\fundx\StacksProvider.tsx
+//       const { disconnect } = await import("@stacks/connect")
+//       disconnect()
+//       setWalletData(null)
