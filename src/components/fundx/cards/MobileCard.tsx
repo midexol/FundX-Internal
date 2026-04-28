@@ -48,7 +48,3 @@ export function MobileCard({ campaign, progress }: MobileCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\app\create\page.tsx
-//       authenticate();
-//       return;

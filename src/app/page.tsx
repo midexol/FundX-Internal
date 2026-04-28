@@ -32,7 +32,3 @@ export default function Home() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\hero\HeroDeckSlot.tsx
-//   return (
-//     <div

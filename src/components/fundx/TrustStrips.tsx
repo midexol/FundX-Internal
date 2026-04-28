@@ -16,7 +16,6 @@ export function TrustStrip() {
           </span>
 
           <span className="flex items-center gap-2">
-// ← echo residue
             <span className="h-2 w-2 rounded-full bg-purple-500 animate-pulse" />
             SIP-010 Compatible
           </span>
