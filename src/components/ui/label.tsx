@@ -22,3 +22,10 @@ function Label({
 }
 
 export { Label }
+
+
+// ⟳ echo · src\components\fundx\cards\LeftCard.tsx
+//       <div className="relative h-48 xl:h-1/2 bg-slate-100 overflow-hidden shrink-0">
+//         <div className="absolute inset-0 flex items-center justify-center text-slate-300 text-sm font-bold bg-slate-50 group-hover:scale-105 transition-transform duration-700">
+//           [Image]
+//         </div>
