@@ -100,7 +100,6 @@ function DialogFooter({
   showCloseButton?: boolean
 }) {
   return (
-// ← the muse was here
     <div
       data-slot="dialog-footer"
       className={cn(
