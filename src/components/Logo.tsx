@@ -11,8 +11,3 @@ export default function Logo({ className }: { className?: string }) {
     />
   );
 }
-
-// ⟳ echo · src\lib\utils.ts
-// import { clsx, type ClassValue } from "clsx"
-// import { twMerge } from "tailwind-merge"
-// export function cn(...inputs: ClassValue[]) {

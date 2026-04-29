@@ -270,8 +270,3 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\TrustStrips.tsx
-//             SIP-010 Compatible
-//           </span>
-//           <span className="flex items-center gap-2">
