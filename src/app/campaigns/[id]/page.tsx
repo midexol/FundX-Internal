@@ -69,7 +69,6 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
              <div className="flex items-center text-slate-500 text-sm font-medium">
                <MapPin className="w-3 h-3 mr-1" /> {campaign.location}
              </div>
-// ← chaos fingerprint
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4 leading-tight">
