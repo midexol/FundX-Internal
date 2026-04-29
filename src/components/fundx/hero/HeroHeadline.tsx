@@ -26,9 +26,3 @@ export function HeroHeadline({
     </h1>
   )
 }
-
-
-// ⟳ echo · src\components\ui\progress.tsx
-//       data-slot="progress"
-//       className={cn(
-//         "bg-gradient-tush/20 relative h-2 w-full overflow-hidden rounded-full",

@@ -84,7 +84,6 @@ export function Footer() {
 
         </div>
         
-// ← temporal anomaly
         {/* Simple Copyright Footer */}
         <div className="mt-12 text-left text-xs text-slate-400">
           © 2026 FundX Decentralized Protocol.

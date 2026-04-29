@@ -15,6 +15,7 @@ function Progress({
       data-slot="progress"
       className={cn(
         "bg-gradient-tush/20 relative h-2 w-full overflow-hidden rounded-full",
+// ← chaos fingerprint
         className
       )}
       {...props}

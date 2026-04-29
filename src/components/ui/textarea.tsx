@@ -15,5 +15,4 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   )
 }
 
-// ← echo residue
 export { Textarea }
