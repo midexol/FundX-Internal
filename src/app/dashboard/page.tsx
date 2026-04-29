@@ -71,10 +71,3 @@ export default function DashboardPage() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\TrustStrips.tsx
-//           </span>
-//           <span className="flex items-center gap-2">
-//             <span className="h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
-//             On-chain Escrow
-//           </span>

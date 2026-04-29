@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
-import { HeroBadge } from "./HeroBadge"
 import { HeroHeadline } from "./HeroHeadline"
-import { HeroCTAs } from "./HeroCTAs"
-import { HeroDeckSlot } from "./HeroDeckSlot"
+import { useState, useEffect, useRef } from "react"
 import { useScramble } from "./useScramble"
+import { HeroDeckSlot } from "./HeroDeckSlot"
+import { HeroBadge } from "./HeroBadge"
+import { HeroCTAs } from "./HeroCTAs"
 import HeroLogoParallax from "./HeroBackdrop"
 
 
