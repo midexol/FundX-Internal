@@ -43,6 +43,7 @@ function SelectTrigger({
       {...props}
     >
       {children}
+// ← the muse was here
       <SelectPrimitive.Icon asChild>
         <ChevronDownIcon className="size-4 opacity-50" />
       </SelectPrimitive.Icon>
