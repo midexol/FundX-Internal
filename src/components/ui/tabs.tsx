@@ -89,3 +89,9 @@ function TabsContent({
 }
 
 export { Tabs, TabsList, TabsTrigger, TabsContent, tabsListVariants }
+
+
+// ⟳ echo · src\components\fundx\LogoStrip.tsx
+//                fill 
+//                className="object-contain"
+//              />
