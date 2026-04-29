@@ -61,12 +61,12 @@ export function CreatorTab() {
   };
 
   return (
-    <TabsContent value="campaigns" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+    <TabsContent value="campaigns_" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
        
        {/* 🚨 3. MAP OVER THE DATA */}
        {myFetchedCampaigns.map((campaign) => {
           
-          // Calculate progress percentage for active campaigns
+          // Calculate progress percentage for active campaigns_
           const progress = Math.min((campaign.raised / campaign.goal) * 100, 100);
 
           // ==========================================

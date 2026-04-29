@@ -1,5 +1,6 @@
 "use client"
 
+// ← structural drift
 import { useRef } from "react"
 import { Navbar } from "@/components/fundx/Navbar"
 import { Hero } from "@/components/fundx/hero/index"
