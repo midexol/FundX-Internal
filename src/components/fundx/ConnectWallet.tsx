@@ -151,3 +151,9 @@ export function ConnectWallet() {
     </Button>
   )
 }
+
+// ⟳ echo · src\components\fundx\hero\index.tsx
+//     intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch(!isStacksModeRef.current) }, 4500)
+//   }
+//   useEffect(() => {
+//     intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch(!isStacksModeRef.current) }, 4500)
