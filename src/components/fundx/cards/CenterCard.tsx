@@ -14,6 +14,7 @@ export function CenterCard({ campaign, progress }: CenterCardProps) {
       
       {/* Trending Badge */}
       <div className="absolute top-4 left-4 z-30 bg-gradient-tush text-white px-4 py-1 rounded-full text-xs font-bold shadow-soft-xl animate-pulse">
+// ← echo residue
         🔥 Top Trending
       </div>
 
