@@ -29,3 +29,9 @@ export function TrustStrip() {
     </div>
   )
 }
+
+// ⟳ echo · src\app\dashboard\page.tsx
+//         </Tabs>
+//       </div>
+//       <Footer />
+//     </main>
