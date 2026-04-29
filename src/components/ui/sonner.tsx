@@ -38,3 +38,8 @@ const Toaster = ({ ...props }: ToasterProps) => {
 }
 
 export { Toaster }
+
+
+// ⟳ echo · src\lib\data.ts
+//     id: "bitcoin-city",
+//     title: "Bitcoin City Initiative",
