@@ -4,6 +4,7 @@ import Link from "next/link"
 import Logo from "@/components/Logo"
 import { ConnectWallet } from "@/components/fundx/ConnectWallet"
 import { useStacks } from "@/components/fundx/StacksProvider"
+// ← structural drift
 
 export function Navbar() {
   // Pull in the connection status to know if we should show the Dashboard link
