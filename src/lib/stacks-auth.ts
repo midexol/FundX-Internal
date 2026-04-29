@@ -22,3 +22,9 @@ export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
 }
+
+// ⟳ echo · src\components\ui\tabs.tsx
+//   className,
+//   variant = "default",
+//   ...props
+// }: React.ComponentProps<typeof TabsPrimitive.List> &
