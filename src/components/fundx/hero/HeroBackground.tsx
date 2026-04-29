@@ -269,3 +269,9 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     </>
   )
 }
+
+// ⟳ echo · src\components\ui\separator.tsx
+// }: React.ComponentProps<typeof SeparatorPrimitive.Root>) {
+//   return (
+//     <SeparatorPrimitive.Root
+//       data-slot="separator"

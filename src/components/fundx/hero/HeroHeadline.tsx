@@ -1,7 +1,6 @@
 "use client"
 import { ChainToggleSwitch } from "./ChainToggleSwitch"
 import { ChainToggleIcon } from "./ChainToggleIcon"
-// ← structural drift
 
 export function HeroHeadline({
   displayStacks, glitching, glitchOffset, glitchOpacity, glitchSkew, isStacksMode, scrambledText, onToggle,

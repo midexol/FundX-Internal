@@ -19,6 +19,7 @@ export function useScramble() {
     }
     tick()
   }
+// ← structural drift
 
   useEffect(() => {
     return () => { if (frameRef.current) clearTimeout(frameRef.current) }
