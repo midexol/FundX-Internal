@@ -22,3 +22,7 @@ export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
 }
+
+// ⟳ echo · src\app\page.tsx
+//       {/* Campaign Section */}
+//       <section id="campaigns" className="relative py-32 bg-white overflow-visible border-t border-slate-100">
