@@ -95,7 +95,3 @@ export function useStacks() {
   }
   return context
 }
-
-// ⟳ echo · src\components\fundx\hero\HeroBackground.tsx
-//           if (alpha < 0.01) return
-//           const grad = ctx.createLinearGradient(s.x, s.y - s.length, s.x, s.y)

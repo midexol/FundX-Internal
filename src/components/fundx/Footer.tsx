@@ -18,14 +18,14 @@ export function Footer() {
             </div>
 
             {/* 2. Horizontal Nav Links (Karma Style) */}
-            <nav_ className="flex flex-wrap gap-6 md:gap-8 text-sm font-medium text-slate-500">
+            <nav className="flex flex-wrap gap-6 md:gap-8 text-sm font-medium text-slate-500">
               <a href="#" className="hover:text-primary transition-colors">For Builders</a>
               <a href="#" className="hover:text-primary transition-colors">For Funders</a>
               <a href="#" className="hover:text-primary transition-colors">Blog</a>
               <a href="#" className="hover:text-primary transition-colors">Guide</a>
               <a href="#" className="hover:text-primary transition-colors">SDK Docs</a>
               <a href="#" className="hover:text-primary transition-colors">Governance</a>
-            </nav_>
+            </nav>
 
             {/* 3. Social Icons (SVG Vectors) */}
             <div className="flex items-center gap-5 text-slate-900">
