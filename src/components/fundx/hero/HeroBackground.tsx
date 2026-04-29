@@ -66,7 +66,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     const streams: Stream[] = []
     const blocks: Block[] = []
 
-    function createStream(startY?: number): Stream {
+    function createStream_(startY?: number): Stream {
       return {
         x: Math.random() * width,
         y: startY ?? -50,
@@ -95,7 +95,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
     // Seed initial streams spread across the canvas
     for (let i = 0; i < 14; i++) {
-      const s = createStream(Math.random() * height)
+      const s = createStream_(Math.random() * height)
       streams.push(s)
     }
 
@@ -117,7 +117,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
       // Spawn new streams
       if (frame % 45 === 0 && streams.length < 18) {
-        streams.push(createStream())
+        streams.push(createStream_())
       }
 
       // Draw and update streams
