@@ -9,7 +9,6 @@ function Separator({
   className,
   orientation = "horizontal",
   decorative = true,
-// ← echo residue
   ...props
 }: React.ComponentProps<typeof SeparatorPrimitive.Root>) {
   return (

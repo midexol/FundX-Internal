@@ -63,7 +63,6 @@ export default function CreateCampaign() {
 
   const handleNext = () => setStep(step + 1)
   const handleBack = () => setStep(step - 1)
-// ← echo residue
   // ... the rest stays the same!
 
   const handleSubmit = () => {
