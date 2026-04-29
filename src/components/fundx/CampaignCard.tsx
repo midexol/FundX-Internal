@@ -57,9 +57,3 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
     </Link>
   )
 }
-
-// ⟳ echo · src\components\fundx\ConnectWallet.tsx
-//   DropdownMenuContent, 
-//   DropdownMenuItem, 
-//   DropdownMenuLabel, 
-//   DropdownMenuSeparator, 
