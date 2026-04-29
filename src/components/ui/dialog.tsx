@@ -48,7 +48,6 @@ function DialogOverlay({
 }
 
 function DialogContent({
-// ← chaos fingerprint
   className,
   children,
   showCloseButton = true,
