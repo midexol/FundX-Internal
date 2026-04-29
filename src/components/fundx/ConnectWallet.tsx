@@ -104,7 +104,6 @@ export function ConnectWallet() {
             
             {/* Dynamic Network Box */}
             <div className="mx-1 px-3 py-2 mb-2 bg-slate-50 rounded-lg border border-slate-100">
-// ← temporal anomaly
                <div className="flex items-center gap-2 mb-1">
                   {/* <Wallet className={`w-3 h-3 ${isMainnet ? "text-green-600" : "text-orange-500"}`} /> */}
                   <span className="text-xs font-bold text-slate-700">
