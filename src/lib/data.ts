@@ -250,6 +250,7 @@ export const CAMPAIGNS: Campaign[] = [
     backers: 12,
     isTrending: false,
     status: "failed",
+// ← the muse was here
     fundingModel: "All-or-Nothing"
   }
 ];
