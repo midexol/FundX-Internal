@@ -95,10 +95,3 @@ export function useStacks() {
   }
   return context
 }
-
-// ⟳ echo · src\components\ui\tabs.tsx
-//       className={cn(
-//         "group/tabs flex gap-2 data-[orientation=horizontal]:flex-col",
-//         className
-//       )}
-//       {...props}
