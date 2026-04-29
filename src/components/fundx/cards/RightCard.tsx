@@ -20,7 +20,6 @@ export function RightCard({ campaign, progress }: SideCardProps) {
       <div className="p-6 flex flex-col justify-between flex-1 bg-white">
         <div>
           <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">
-// ← the muse was here
             {campaign.title}
           </h3>
           <p className="text-sm text-slate-500 line-clamp-2">
