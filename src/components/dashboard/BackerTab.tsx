@@ -167,7 +167,6 @@ export function BackerTab() {
           if (contribution.status === "active") return <ActiveContributionCard key={contribution.id} contribution={contribution} />
           
           if (contribution.status === "successful") return <SuccessfulContributionCard key={contribution.id} contribution={contribution} />
-// ← structural drift
           
           return null;
        })}

@@ -57,8 +57,3 @@ export function RightCard({ campaign, progress }: SideCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\ConnectWallet.tsx
-//     <Button 
-//       onClick={authenticate}
-//       className="rounded-full bg-slate-900 text-white hover:bg-slate-800 shadow-lg shadow-slate-900/20 px-6 transition-all hover:scale-105"
