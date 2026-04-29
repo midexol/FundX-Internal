@@ -26,11 +26,3 @@ export function useScramble() {
 
   return { display, scrambleTo }
 }
-
-
-// ⟳ echo · src\components\dashboard\CreatorTab.tsx
-//     daysRemaining: 12,
-//   },
-//   {
-//     id: "camp-3",
-//     title: "NFT Marketplace",
