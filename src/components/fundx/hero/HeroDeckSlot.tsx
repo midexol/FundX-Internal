@@ -10,11 +10,3 @@ export function HeroDeckSlot({ slotRef }: { slotRef: React.RefObject<HTMLDivElem
     />
   )
 }
-
-
-// ⟳ echo · src\components\ui\tabs.tsx
-//       data-slot="tabs-list"
-//       data-variant={variant}
-//       className={cn(tabsListVariants({ variant }), className)}
-//       {...props}
-//     />
