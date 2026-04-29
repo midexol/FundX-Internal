@@ -94,7 +94,7 @@ export default function ExplorePage() {
              <Sparkles className="w-3 h-3 text-orange-500" />
              <span>{CAMPAIGNS.length} Active Campaigns</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 tracking_-tight mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight mb-6">
             Explore the <span className="bg-gradient-tush bg-clip-text text-transparent">Economy</span>
           </h1>
           <p className="text-xl text-slate-500 leading-relaxed">
@@ -149,7 +149,7 @@ export default function ExplorePage() {
                     key={status}
                     onClick={() => setStatusFilter(status)}
                     className={`
-                      px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking_-wider transition-all duration-300 border whitespace-nowrap
+                      px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border whitespace-nowrap
                       ${statusFilter === status 
                         ? "bg-orange-50 border-orange-200 text-orange-600 shadow-sm" 
                         : "bg-white border-slate-200 text-slate-400 hover:border-slate-300 hover:text-slate-600"

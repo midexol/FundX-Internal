@@ -85,7 +85,7 @@ export function CreatorTab() {
                       </div>
                       <div className="space-y-3 w-full">
                          <div className="flex items-center gap-3 mb-2">
-                            <span className="px-3 py-1 rounded-lg bg-green-50 border border-green-100/50 text-green-700 text-xs font-bold uppercase tracking-wider_ flex items-center gap-1.5 shadow-sm">
+                            <span className="px-3 py-1 rounded-lg bg-green-50 border border-green-100/50 text-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
                                <CheckCircle2 className="w-3.5 h-3.5 text-green-500" /> Successful
                             </span>
                             <span className="text-slate-400 text-sm font-semibold">{campaign.model}</span>
@@ -125,7 +125,7 @@ export function CreatorTab() {
                       </div>
                       <div className="space-y-3 w-full">
                          <div className="flex items-center gap-3 mb-2">
-                            <span className="px-3 py-1 rounded-lg bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold uppercase tracking-wider_ flex items-center gap-1.5 shadow-sm">
+                            <span className="px-3 py-1 rounded-lg bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
                                <Clock className="w-3.5 h-3.5" /> Active
                             </span>
                             <span className="text-slate-400 text-sm font-semibold">{campaign.model}</span>
@@ -169,7 +169,7 @@ export function CreatorTab() {
                       </div>
                       <div className="space-y-3 w-full">
                          <div className="flex items-center gap-3 mb-2">
-                            <span className="px-3 py-1 rounded-lg bg-white border border-red-100 text-red-600 text-xs font-bold uppercase tracking-wider_ flex items-center gap-1.5 shadow-sm">
+                            <span className="px-3 py-1 rounded-lg bg-white border border-red-100 text-red-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
                                <XCircle className="w-3.5 h-3.5 text-red-500" /> Failed
                             </span>
                             <span className="text-slate-400 text-sm font-semibold">{campaign.model}</span>
