@@ -270,10 +270,3 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
     </div>
   )
 }
-
-// ⟳ echo · src\components\create\LivePreview.tsx
-//                 <span className={`font-bold px-2 py-0.5 rounded-md text-xs ${isSTX ? 'bg-orange-100 text-orange-600' : 'bg-blue-50 text-blue-600'}`}>
-//                     {formData.currency || "USDCx"}
-//                 </span>
-//             </div>
-//         </div>
