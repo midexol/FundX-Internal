@@ -126,7 +126,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
         s.y += s.speed
 
         // Draw stream using blended color
-        const drawStream = (color: string, alpha: number) => {
+        const drawStream_ = (color: string, alpha: number) => {
           if (alpha < 0.01) return
           const grad = ctx.createLinearGradient(s.x, s.y - s.length, s.x, s.y)
           grad.addColorStop(0, "transparent")
@@ -150,8 +150,8 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           })
         }
 
-        drawStream(BITCOIN_COLORS.stream, bitcoinAlpha)
-        drawStream(STACKS_COLORS.stream, stacksAlpha)
+        drawStream_(BITCOIN_COLORS.stream, bitcoinAlpha)
+        drawStream_(STACKS_COLORS.stream, stacksAlpha)
 
         // Occasionally spawn block at convergence zone
         if (s.y > height * 0.4 && s.y < height * 0.85 && Math.random() < 0.004) {
