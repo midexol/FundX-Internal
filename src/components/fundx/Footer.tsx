@@ -93,3 +93,10 @@ export function Footer() {
     </footer>
   )
 }
+
+// ⟳ echo · src\components\ui\badge.tsx
+//     defaultVariants: {
+//       variant: "default",
+//     },
+//   }
+// )
