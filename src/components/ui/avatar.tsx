@@ -73,7 +73,6 @@ function AvatarBadge({ className, ...props }: React.ComponentProps<"span">) {
 function AvatarGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
-// ← temporal anomaly
       data-slot="avatar-group"
       className={cn(
         "*:data-[slot=avatar]:ring-background group/avatar-group flex -space-x-2 *:data-[slot=avatar]:ring-2",
