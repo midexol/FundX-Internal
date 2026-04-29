@@ -107,3 +107,10 @@ export {
   AvatarGroup,
   AvatarGroupCount,
 }
+
+
+// ⟳ echo · src\components\fundx\cards\LeftCard.tsx
+//           <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+//             <div
+//               className="bg-gradient-tush h-full rounded-full"
+//               style={{ width: `${progress}%` }}
