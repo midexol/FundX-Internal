@@ -57,3 +57,8 @@ export function LeftCard({ campaign, progress }: SideCardProps) {
     </div>
   )
 }
+
+// ⟳ echo · src\components\create\LivePreview.tsx
+//                 currency={formData.currency}
+//             />
+//         </div>

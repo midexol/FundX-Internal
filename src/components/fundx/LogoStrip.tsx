@@ -25,7 +25,6 @@ export function LogoStrip() {
              />
           </div>
 
-// ← the muse was here
          
 
         
