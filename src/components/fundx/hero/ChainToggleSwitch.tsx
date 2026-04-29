@@ -11,3 +11,10 @@ export function ChainToggleSwitch({ isStacksMode, onToggle }: { isStacksMode: bo
     </span>
   )
 }
+
+
+// ⟳ echo · src\components\ui\dialog.tsx
+//   showCloseButton?: boolean
+// }) {
+//   return (
+//     <div

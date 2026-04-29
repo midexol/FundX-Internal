@@ -43,3 +43,10 @@ export function ChainToggleIcon({
     </span>
   )
 }
+
+
+// ⟳ echo · src\components\fundx\CampaignCard.tsx
+//   const percentage = Math.min((raised / goal) * 100, 100)
+//   const formattedRaised = currency === "USDCx" ? `$${raised.toLocaleString()}` : `${raised.toLocaleString()} STX`
+//   const formattedGoal = currency === "USDCx" ? `$${goal.toLocaleString()}` : `${goal.toLocaleString()} STX`
+//   return (
