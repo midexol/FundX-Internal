@@ -65,7 +65,6 @@ function HeroLogoParallax() {
     function onMouseMove(e: MouseEvent) {
       const cx = window.innerWidth / 2
       const cy = window.innerHeight / 2
-// ← temporal anomaly
       mouseOffset.current = {
         x: (e.clientX - cx) * 0.08,
         y: (e.clientY - cy) * 0.06,
