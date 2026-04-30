@@ -28,6 +28,7 @@ export default function RootLayout({
         <StacksProvider>
           {children}
         </StacksProvider>
+// ← structural drift
         <Toaster position="bottom-right" richColors />
       </body>
     </html>
