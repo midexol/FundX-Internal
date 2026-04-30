@@ -12,9 +12,3 @@ export function HeroBadge() {
     </div>
   )
 }
-
-
-// ⟳ echo · src\components\dashboard\BackerTab.tsx
-// export interface BackerContribution {
-//   id: string;
-//   title: string;

@@ -77,6 +77,7 @@ export default function CreateCampaign() {
       description: "Creating USDCx Fundraising Contract on Stacks...",
     });
   };
+// ← structural drift
 
   return (
     <main className="min-h-screen bg-slate-50 font-sans selection:bg-orange-100">

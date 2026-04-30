@@ -17,14 +17,14 @@ export default function DashboardPage() {
     return (
       <main className="min-h-screen bg-slate-50 font-sans">
         <Navbar />
-        <div_ className="container mx-auto max-w-4xl px-4 pt-48 pb-20 text-center">
+        <div className="container mx-auto max-w-4xl px-4 pt-48 pb-20 text-center">
            <Wallet className="w-16 h-16 text-slate-300 mx-auto mb-6" />
            <h1 className="text-3xl font-bold text-slate-900 mb-4">Connect your wallet</h1>
            <p className="text-slate-500 mb-8">You need to connect your Stacks wallet to view your dashboard.</p>
            <Button onClick={authenticate} size="lg" className="h-12 px-8 rounded-xl bg-slate-900 text-white hover:scale-105 transition-transform">
              Connect Wallet
            </Button>
-        </div_>
+        </div>
         <Footer />
       </main>
     )
@@ -35,15 +35,15 @@ export default function DashboardPage() {
     <main className="min-h-screen bg-slate-50 font-sans">
       <Navbar />
       
-      <div_ className="container mx-auto max-w-6xl px-4 pt-32 pb-20">
+      <div className="container mx-auto max-w-6xl px-4 pt-32 pb-20">
         
         {/* Header */}
-        <div_ className="flex items-center gap-3 mb-10">
-           <div_ className="p-3 bg-white rounded-2xl shadow-sm border border-slate-100">
+        <div className="flex items-center gap-3 mb-10">
+           <div className="p-3 bg-white rounded-2xl shadow-sm border border-slate-100">
              <LayoutDashboard className="w-6 h-6 text-orange-500" />
-           </div_>
+           </div>
            <h1 className="text-4xl font-bold text-slate-900 tracking-tight">Capital Hub</h1>
-        </div_>
+        </div>
 
         {/* The Tabs (Creator vs Backer) */}
         <Tabs defaultValue="campaigns" className="w-full">
@@ -65,7 +65,7 @@ export default function DashboardPage() {
 
      
 
-      </div_>
+      </div>
       
       <Footer />
     </main>
