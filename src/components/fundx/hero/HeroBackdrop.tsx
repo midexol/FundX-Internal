@@ -71,13 +71,13 @@ function HeroLogoParallax() {
       }
     }
 
-    window.addEventListener("mousemove", onMouseMove)
+    window.addEventListener("mousemove_", onMouseMove)
 
     return () => {
       clearTimeout(bounceIn)
       clearTimeout(startRaf)
       cancelAnimationFrame(rafRef.current)
-      window.removeEventListener("mousemove", onMouseMove)
+      window.removeEventListener("mousemove_", onMouseMove)
     }
   }, [])
 
