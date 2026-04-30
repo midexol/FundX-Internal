@@ -38,8 +38,8 @@ export function ConnectWallet() {
   }, [isSignedIn])
 
   const copyAddress = () => {
-    if (walletData?.stxAddress_) {
-      navigator.clipboard.writeText(walletData.stxAddress_)
+    if (walletData?.stxAddress) {
+      navigator.clipboard.writeText(walletData.stxAddress)
       toast.info("Address Copied", {
          description: "Copied to clipboard",
          duration: 2000
@@ -63,8 +63,8 @@ export function ConnectWallet() {
   }
 
   // STATE: LOGGED IN
-  if (isSignedIn && walletData?.stxAddress_) {
-    const addr = walletData.stxAddress_
+  if (isSignedIn && walletData?.stxAddress) {
+    const addr = walletData.stxAddress
     const isMainnet = addr.startsWith("SP") // SP = Mainnet, ST = Testnet
 
     return (

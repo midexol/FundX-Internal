@@ -71,10 +71,3 @@ export default function DashboardPage() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\hero\HeroBackground.tsx
-//     function draw() {
-//       if (!ctx || !canvas) return
-//       ctx.clearRect(0, 0, width, height)
-//       const isStacks = isStacksModeRef.current
-//       const colors = isStacks ? STACKS_COLORS : BITCOIN_COLORS
