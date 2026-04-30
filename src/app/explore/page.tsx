@@ -234,8 +234,3 @@ export default function ExplorePage() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\create\LivePreview.tsx
-//                 description={formData.tagline || "Your campaign description will appear here..."}
-//                 raised={0}
-//                 goal={Number(formData.goal) || 10000}
