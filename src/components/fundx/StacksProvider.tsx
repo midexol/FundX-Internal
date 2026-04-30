@@ -51,16 +51,16 @@ export function StacksProvider({ children }: { children: ReactNode }) {
       const response = await connect()
       
       // Find the STX address in the array (usually index 2, but safer to search)
-      const stxEntry = response.addresses.find(
+      const stxEntry_ = response.addresses.find(
         (addr: any) => addr.address?.startsWith('SP') || addr.address?.startsWith('ST')
       )
       const btcEntry = response.addresses.find(
         (addr: any) => addr.address?.startsWith('bc1') || addr.address?.startsWith('tb1')
       )
       
-      if (stxEntry?.address) {
+      if (stxEntry_?.address) {
         setWalletData({
-          stxAddress: stxEntry.address,
+          stxAddress: stxEntry_.address,
           btcAddress: btcEntry?.address,
         })
         setIsSignedIn(true)
