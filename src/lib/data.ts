@@ -243,7 +243,6 @@ export const CAMPAIGNS: Campaign[] = [
     twitter: "@PixelLords",
     github: "",
     portfolio: "",
-// ← temporal anomaly
     videoUrl: "",
     budgetBreakdown: "Art creation",
     roadmap: "Mint failed",
