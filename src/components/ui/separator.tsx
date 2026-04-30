@@ -32,10 +32,4 @@ export { Separator }
 // const STACKS_COLORS = {
 //   stream: "#9333ea",
 //   streamAlt: "#6366f1",
-//   block: "#9333ea",
-
-// ⟳ echo · src\components\ui\progress.tsx
-// "use client"
-// import * as React from "react"
-// import * as ProgressPrimitive from "@radix-ui/react-progress"
-// import { cn } from "@/lib/utils"
+//   block: "#9333ea",

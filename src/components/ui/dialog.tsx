@@ -96,7 +96,6 @@ function DialogFooter({
   showCloseButton = false,
   children,
   ...props
-// ← echo residue
 }: React.ComponentProps<"div"> & {
   showCloseButton?: boolean
 }) {
