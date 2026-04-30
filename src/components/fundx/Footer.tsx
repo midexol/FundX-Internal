@@ -93,7 +93,3 @@ export function Footer() {
     </footer>
   )
 }
-
-// ⟳ echo · src\components\ui\dropdown-menu.tsx
-//     <DropdownMenuPrimitive.RadioGroup
-//       data-slot="dropdown-menu-radio-group"
