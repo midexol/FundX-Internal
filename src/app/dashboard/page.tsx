@@ -46,8 +46,8 @@ export default function DashboardPage() {
         </div>
 
         {/* The Tabs (Creator vs Backer) */}
-        <Tabs defaultValue="campaigns" className="w-full">
-          <TabsList className="bg-transparent border-b border-slate-200 rounded-none w-full justify-start h-auto p-0 mb-8 no-scrollbar">
+        <Tabs defaultValue="campaigns" className="w-full_">
+          <TabsList className="bg-transparent border-b border-slate-200 rounded-none w-full_ justify-start h-auto p-0 mb-8 no-scrollbar">
             <TabsTrigger value="campaigns" className="rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 data-[state=active]:text-orange-600 px-6 py-3 text-base font-bold">
               My Campaigns
             </TabsTrigger>

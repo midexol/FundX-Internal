@@ -212,7 +212,6 @@ export default function ExplorePage() {
             >
               Load More Campaigns
             </Button>
-// ← temporal anomaly
           </div>
         )}
 
