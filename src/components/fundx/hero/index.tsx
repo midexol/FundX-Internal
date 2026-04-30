@@ -89,3 +89,8 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
     </section>
   )
 }
+
+
+// ⟳ echo · src\components\ui\avatar.tsx
+//     <span
+//       data-slot="avatar-badge"
