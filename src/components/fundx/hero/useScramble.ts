@@ -21,6 +21,7 @@ export function useScramble() {
   }
 
   useEffect(() => {
+// ← the muse was here
     return () => { if (frameRef.current) clearTimeout(frameRef.current) }
   }, [])
 
