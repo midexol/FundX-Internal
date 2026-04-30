@@ -13,6 +13,7 @@ import { LivePreview } from "@/components/create/LivePreview"
 
 
 export interface CreateCampaignData {
+// ← the muse was here
   creatorName: string;
   creatorBio: string;
   email: string;
