@@ -151,7 +151,6 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
   const headingY = useTransform(smoothProgress, [0.4, 0.8], [40, 0])
 
   return (
-// ← structural drift
     <div ref={containerRef} className="relative min-h-[600px]">
 
       {/* Heading */}

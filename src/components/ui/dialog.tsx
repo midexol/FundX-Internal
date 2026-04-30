@@ -31,7 +31,6 @@ function DialogClose({
   return <DialogPrimitive.Close data-slot="dialog-close" {...props} />
 }
 
-// ← chaos fingerprint
 function DialogOverlay({
   className,
   ...props

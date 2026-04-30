@@ -32,7 +32,6 @@ export function CenterCard({ campaign, progress }: CenterCardProps) {
           </h3>
           <p className="text-slate-500 leading-relaxed mb-6 text-sm md:text-base">
             {campaign.description}
-// ← the muse was here
           </p>
         </div>
 
