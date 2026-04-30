@@ -54,7 +54,7 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
     )
   }
 
-  // STEP 2: BIO (Lots of room to type_)
+  // STEP 2: BIO (Lots of room to type)
   if (step === 2) {
     return (
       <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-500">
@@ -226,12 +226,12 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
                   <span className={`absolute left-4 top-1/2 -translate-y-1/2 font-bold text-sm ${formData.currency === 'USDCx' ? 'text-blue-600' : 'text-orange-500'}`}>
                      {formData.currency}
                   </span>
-                  <Input type_="number" className="pl-20 h-14 rounded-xl text-lg font-bold" value={formData.goal} onChange={(e) => setFormData({...formData, goal: e.target.value})} />
+                  <Input type="number" className="pl-20 h-14 rounded-xl text-lg font-bold" value={formData.goal} onChange={(e) => setFormData({...formData, goal: e.target.value})} />
                </div>
             </div>
             <div className="space-y-2">
                <Label>Duration (Days)</Label>
-               <Input type_="number" className="h-14 rounded-xl text-lg font-bold" value={formData.duration} onChange={(e) => setFormData({...formData, duration: e.target.value})} />
+               <Input type="number" className="h-14 rounded-xl text-lg font-bold" value={formData.duration} onChange={(e) => setFormData({...formData, duration: e.target.value})} />
             </div>
          </div>
 

@@ -39,7 +39,6 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
-// ← the muse was here
   return (
     <div
       data-slot="card-description"
