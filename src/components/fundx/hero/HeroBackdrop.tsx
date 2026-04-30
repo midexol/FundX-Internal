@@ -105,8 +105,3 @@ function HeroLogoParallax() {
 }
 
 export default HeroLogoParallax
-
-// ⟳ echo · src\app\explore\page.tsx
-// "use client"
-// import { useState, useMemo, useEffect } from "react"
-// import { Navbar } from "@/components/fundx/Navbar"
