@@ -269,3 +269,9 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     </>
   )
 }
+
+// ⟳ echo · src\components\fundx\ConnectWallet.tsx
+//       // Trigger Toast
+//       toast.success("Wallet Connected", {
+//         description: "Ready to fund the future.",
+//         duration: 3000,
