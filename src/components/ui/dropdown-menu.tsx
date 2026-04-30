@@ -255,3 +255,8 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuSubContent,
 }
+
+
+// ⟳ echo · src\components\ui\select.tsx
+// }: React.ComponentProps<typeof SelectPrimitive.Trigger> & {
+//   size?: "sm" | "default"
