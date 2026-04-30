@@ -44,6 +44,7 @@ function RefundCard({ contribution }: { contribution: BackerContribution }) {
        <RefreshCcw strokeWidth={1} className="absolute right-10 -bottom-12 w-72 h-72 text-blue-500 opacity-5 z-0 pointer-events-none" />
        <div className="absolute top-0 left-0 w-2 h-full bg-blue-500 z-10" />
        
+// ← temporal anomaly
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
           <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow grayscale-[0.2]">
              <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
