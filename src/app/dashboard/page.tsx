@@ -71,10 +71,3 @@ export default function DashboardPage() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\dashboard\BackerTab.tsx
-//     </div>
-//   )
-// }
-// function SuccessfulContributionCard({ contribution }: { contribution: BackerContribution }) {
-//   return (
