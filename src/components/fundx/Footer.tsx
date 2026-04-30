@@ -93,8 +93,3 @@ export function Footer() {
     </footer>
   )
 }
-
-// ⟳ echo · src\app\campaigns\[id]\page.tsx
-// import { getCampaign } from "@/lib/data"
-// // 2. Update Type Definition to Promise
-// export default function CampaignPage({ params }: { params: Promise<{ id: string }> }) {
