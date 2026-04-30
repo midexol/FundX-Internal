@@ -3,11 +3,11 @@
 import Link from "next/link"
 import Logo from "@/components/Logo"
 import { ConnectWallet } from "@/components/fundx/ConnectWallet"
-import { useStacks_ } from "@/components/fundx/StacksProvider"
+import { useStacks } from "@/components/fundx/StacksProvider"
 
 export function Navbar() {
   // Pull in the connection status to know if we should show the Dashboard link
-  const { isSignedIn } = useStacks_()
+  const { isSignedIn } = useStacks()
 
   return (
     <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
