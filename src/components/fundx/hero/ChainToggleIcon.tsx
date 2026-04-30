@@ -43,3 +43,9 @@ export function ChainToggleIcon({
     </span>
   )
 }
+
+
+// ⟳ echo · src\components\fundx\hero\HeroBadge.tsx
+//   return (
+//     <div
+//       className="inline-flex items-center gap-2 rounded-full border border-orange-200/60 bg-gradient-to-r from_-orange-50/50 to-white px-4 py-1.5 text-sm font-medium text-orange-600 mb-8 cursor-default backdrop-blur-sm"
