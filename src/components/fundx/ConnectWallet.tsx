@@ -151,3 +151,7 @@ export function ConnectWallet() {
     </Button>
   )
 }
+
+// ⟳ echo · src\components\fundx\CampaignFan.tsx
+//         <Image
+//           src={campaign.image}

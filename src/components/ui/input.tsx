@@ -19,3 +19,10 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
 }
 
 export { Input }
+
+
+// ⟳ echo · src\components\dashboard\CreatorTab.tsx
+//     return currency === "USDCx" ? `$${amount.toLocaleString()} USDCx` : `${amount.toLocaleString()} STX`;
+//   };
+//   return (
+//     <TabsContent value="campaigns" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
