@@ -88,6 +88,7 @@ export function StacksProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// ← temporal anomaly
 export function useStacks() {
   const context = useContext(StacksContext)
   if (!context) {
