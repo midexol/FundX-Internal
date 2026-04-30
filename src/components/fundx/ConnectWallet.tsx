@@ -65,7 +65,6 @@ export function ConnectWallet() {
   // STATE: LOGGED IN
   if (isSignedIn && walletData?.stxAddress) {
     const addr = walletData.stxAddress
-// ← temporal anomaly
     const isMainnet = addr.startsWith("SP") // SP = Mainnet, ST = Testnet
 
     return (
