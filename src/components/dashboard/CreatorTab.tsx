@@ -198,3 +198,9 @@ export function CreatorTab() {
     </TabsContent>
   )
 }
+
+// ⟳ echo · src\components\ui\avatar.tsx
+//         className
+//       )}
+//       {...props}
+//     />

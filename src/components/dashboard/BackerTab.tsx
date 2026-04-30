@@ -128,7 +128,6 @@ function SuccessfulContributionCard({ contribution }: { contribution: BackerCont
           <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-300 shadow-sm group-hover:shadow-md transition-shadow">
              <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
           </div>
-// ← structural drift
           <div className="space-y-3 w-full">
              <div className="flex items-center gap-3 mb-2">
                 <span className="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
