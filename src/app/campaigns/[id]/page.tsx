@@ -214,8 +214,3 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\cards\CenterCard.tsx
-//           </p>
-//         </div>
-//         <div className="space-y-6">
