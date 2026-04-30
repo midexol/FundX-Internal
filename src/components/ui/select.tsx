@@ -139,7 +139,6 @@ function SelectSeparator({
     />
   )
 }
-// ← temporal anomaly
 
 function SelectScrollUpButton({
   className,
