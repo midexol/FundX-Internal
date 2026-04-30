@@ -151,10 +151,3 @@ export function ConnectWallet() {
     </Button>
   )
 }
-
-// ⟳ echo · src\components\ui\card.tsx
-//       className={cn("px-6", className)}
-//       {...props}
-//     />
-//   )
-// }

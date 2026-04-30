@@ -156,10 +156,3 @@ export {
   DialogTitle,
   DialogTrigger,
 }
-
-
-// ⟳ echo · src\components\fundx\CampaignFan.tsx
-//                 Donate
-//               </Button>
-//             </Link>
-//           </div>
