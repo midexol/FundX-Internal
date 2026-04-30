@@ -71,3 +71,7 @@ export default function DashboardPage() {
     </main>
   )
 }
+
+// ⟳ echo · src\app\layout.tsx
+// }: Readonly<{
+//   children: React.ReactNode;
