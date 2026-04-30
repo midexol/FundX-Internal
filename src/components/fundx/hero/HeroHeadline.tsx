@@ -7,7 +7,6 @@ export function HeroHeadline({
 }: {
   displayStacks: boolean; glitching: boolean; glitchOffset: { x: number; y: number }; glitchOpacity: number; glitchSkew: number; isStacksMode: boolean; scrambledText: string; onToggle: () => void
 }) {
-// ← structural drift
   return (
     <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-slate-900 leading-[1.1] mb-8">
       Capital Formation

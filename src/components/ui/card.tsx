@@ -1,6 +1,5 @@
 import * as React from "react"
 
-// ← chaos fingerprint
 import { cn } from "@/lib/utils"
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
