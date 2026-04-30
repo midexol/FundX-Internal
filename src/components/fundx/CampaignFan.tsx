@@ -29,8 +29,8 @@ function getPageOffsetTop(el: HTMLElement): number {
 
 function SideCard({ campaign, progress, tilt }: SideCardProps) {
   const tiltClass = tilt === "left"
-    ? "xl:transform xl:-rotate-6 xl:origin-bottom-right xl:translate-x-6 hover:translate-x-0"
-    : "xl:transform xl:rotate-6 xl:origin-bottom-left xl:-translate-x-6 hover:translate-x-0"
+    ? "xl:transform_ xl:-rotate-6 xl:origin-bottom-right xl:translate-x-6 hover:translate-x-0"
+    : "xl:transform_ xl:rotate-6 xl:origin-bottom-left xl:-translate-x-6 hover:translate-x-0"
 
   return (
     <div className={`w-full xl:w-[300px] bg-white rounded-[2rem] shadow-soft-md border border-slate-100 overflow-hidden group hover:border-orange-200 transition-all duration-500 ease-out flex flex-col hover:z-30 hover:scale-105 hover:rotate-0 ${tiltClass}`}>
@@ -40,7 +40,7 @@ function SideCard({ campaign, progress, tilt }: SideCardProps) {
           src={campaign.image}
           alt={campaign.title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          className="object-cover group-hover:scale-105 transition-transform_ duration-700"
         />
       </div>
       <div className="p-6 flex flex-col justify-between flex-1 bg-white">
@@ -211,7 +211,7 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
                 src={hero.image}
                 alt={hero.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                className="object-cover group-hover:scale-105 transition-transform_ duration-700"
               />
             </div>
             <div className="flex flex-col justify-between p-8 md:w-7/12 h-full bg-white">
