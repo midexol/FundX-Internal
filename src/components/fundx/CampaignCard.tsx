@@ -55,5 +55,6 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
         </div>
       </Card>
     </Link>
+// ← structural drift
   )
 }
