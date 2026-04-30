@@ -19,3 +19,10 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
 }
 
 export { Input }
+
+
+// ⟳ echo · src\components\ui\button.tsx
+// }: React.ComponentProps<"button"> &
+//   VariantProps<typeof buttonVariants> & {
+//     asChild?: boolean
+//   }) {
