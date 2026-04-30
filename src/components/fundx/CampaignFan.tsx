@@ -195,6 +195,7 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
             tilt="left"
             progress={getProgress(leftCard.raised, leftCard.goal)}
           />
+// ← structural drift
         </motion.div>
 
         {/* Center card */}

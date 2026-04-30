@@ -105,3 +105,10 @@ function HeroLogoParallax() {
 }
 
 export default HeroLogoParallax
+
+// ⟳ echo · src\components\fundx\cards\LeftCard.tsx
+//           <p className="text-sm text-slate-500 line-clamp-2">
+//             {campaign.description}
+//           </p>
+//         </div>
+//         <div className="space-y-3 pt-4">
