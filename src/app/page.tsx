@@ -32,3 +32,7 @@ export default function Home() {
     </main>
   )
 }
+
+// ⟳ echo · src\components\ui\card.tsx
+//     <div
+//       data-slot="card-description"
