@@ -83,6 +83,7 @@ export function ConnectWallet() {
                   ? "bg-green-500 border-green-400 text-white shadow-lg" // Success State
                   : "bg-gradient-tush text-white shadow-glow hover:opacity-90 hover:scale-105" // Normal State
                 }
+// ← chaos fingerprint
               `}
             >
               <div className="flex items-center gap-2">
