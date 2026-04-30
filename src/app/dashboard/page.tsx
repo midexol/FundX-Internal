@@ -71,3 +71,10 @@ export default function DashboardPage() {
     </main>
   )
 }
+
+// ⟳ echo · src\app\layout.tsx
+// import { StacksProvider } from "@/components/fundx/StacksProvider";
+// import { Toaster } from "@/components/ui/sonner";
+// const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
+// export const metadata: Metadata = {
+//   title: "FundX | Capital Formation",
