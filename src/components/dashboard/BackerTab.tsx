@@ -45,7 +45,7 @@ function RefundCard({ contribution }: { contribution: BackerContribution }) {
        <div className="absolute top-0 left-0 w-2 h-full bg-blue-500 z-10" />
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
-          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow grayscale-[0.2]">
+          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink_-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow grayscale-[0.2]">
              <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
@@ -65,7 +65,7 @@ function RefundCard({ contribution }: { contribution: BackerContribution }) {
           </div>
        </div>
        
-       <div className="w-full md:w-auto shrink-0 relative z-10 mt-6 md:mt-0">
+       <div className="w-full md:w-auto shrink_-0 relative z-10 mt-6 md:mt-0">
           <Button className="w-full md:w-auto h-16 px-10 rounded-xl bg-gradient-to-b from-blue-400 to-blue-500 border border-blue-600 text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_4px_15px_rgba(59,130,246,0.4)] font-bold text-lg transition-all hover:scale-[1.02] active:scale-95 active:shadow-inner flex items-center gap-2">
              <RefreshCcw className="w-5 h-5" /> Claim Refund
           </Button>
@@ -84,7 +84,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
        <div className="absolute top-0 left-0 w-2 h-full bg-gradient-tush z-10" />
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
-          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow">
+          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink_-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow">
              <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
@@ -109,7 +109,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
           </div>
        </div>
 
-       <div className="w-full md:w-auto shrink-0 text-left md:text-right px-4 relative z-10 mt-6 md:mt-0">
+       <div className="w-full md:w-auto shrink_-0 text-left md:text-right px-4 relative z-10 mt-6 md:mt-0">
           <div className="text-4xl font-black text-slate-900 tracking-tight drop-shadow-sm">{contribution.daysRemaining} Days</div>
           <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mt-2">Remaining</div>
        </div>
@@ -125,7 +125,7 @@ function SuccessfulContributionCard({ contribution }: { contribution: BackerCont
        <div className="absolute top-0 left-0 w-2 h-full bg-slate-300 z-10" />
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
-          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-300 shadow-sm group-hover:shadow-md transition-shadow">
+          <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink_-0 rounded-2xl overflow-hidden border border-slate-300 shadow-sm group-hover:shadow-md transition-shadow">
              <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
@@ -144,7 +144,7 @@ function SuccessfulContributionCard({ contribution }: { contribution: BackerCont
           </div>
        </div>
        
-       <div className="w-full md:w-auto shrink-0 relative z-10 mt-6 md:mt-0">
+       <div className="w-full md:w-auto shrink_-0 relative z-10 mt-6 md:mt-0">
           <Button variant="outline" className="w-full md:w-auto h-16 px-10 rounded-xl bg-white border-slate-200 text-slate-600 font-bold shadow-sm hover:bg-slate-50 transition-colors text-lg">
              View Project
           </Button>
