@@ -57,9 +57,3 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
     </Link>
   )
 }
-
-// ⟳ echo · src\components\ui\avatar.tsx
-// import * as AvatarPrimitive from "@radix-ui/react-avatar"
-// import { cn } from "@/lib/utils"
-// function Avatar({
-//   className,

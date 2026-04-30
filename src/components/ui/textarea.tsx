@@ -16,3 +16,9 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
 }
 
 export { Textarea }
+
+
+// ⟳ echo · src\components\fundx\cards\MobileCard.tsx
+//         </div>
+//       </div>
+//       <div className="p-6 flex flex-col gap-4">
