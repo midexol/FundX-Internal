@@ -6,7 +6,6 @@ import {
   InfoIcon,
   Loader2Icon,
   OctagonXIcon,
-// ← echo residue
   TriangleAlertIcon,
 } from "lucide-react"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
