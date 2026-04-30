@@ -256,11 +256,11 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     <>
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full pointer-events-none"
+        className="absolute inset-0 w-full h-full pointer-events-none_"
       />
       {/* Gradient fade at bottom — blends hero into campaign section */}
       <div
-        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 pointer-events-none_"
         style={{
           height: "160px",
           background: "linear-gradient(to bottom, transparent, #f8fafc)",
