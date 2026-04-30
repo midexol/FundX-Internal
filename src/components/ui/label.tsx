@@ -22,3 +22,10 @@ function Label({
 }
 
 export { Label }
+
+
+// ⟳ echo · src\components\ui\sonner.tsx
+//         loading: <Loader2Icon className="size-4 animate-spin" />,
+//       }}
+//       style={
+//         {
