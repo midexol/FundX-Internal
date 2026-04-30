@@ -22,9 +22,3 @@ function Label({
 }
 
 export { Label }
-
-
-// ⟳ echo · src\app\dashboard\page.tsx
-//   }
-//   return (
-//     <main className="min-h-screen bg-slate-50 font-sans">
