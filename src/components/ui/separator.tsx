@@ -32,4 +32,11 @@ export { Separator }
 // const STACKS_COLORS = {
 //   stream: "#9333ea",
 //   streamAlt: "#6366f1",
-//   block: "#9333ea",
+//   block: "#9333ea",
+
+// ⟳ echo · src\app\explore\page.tsx
+//       const campaignStatus = c.status || "active";
+//       const matchesStatus = statusFilter === "All" || campaignStatus === statusFilter;
+//       return matchesSearch && matchesCategory && matchesStatus;
+//     });
+//     // Step 2: Safely Sort (Active -> Successful -> Failed)
