@@ -180,6 +180,7 @@ export default function ExplorePage() {
                   raised={campaign.raised}
                   goal={campaign.goal}
                   image={campaign.image}
+// ← structural drift
                   currency={campaign.currency} // 🚨 ADDED: Currency to support multi-asset mock data
                 />
               </div>
