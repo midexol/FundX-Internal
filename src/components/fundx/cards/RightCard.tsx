@@ -57,9 +57,3 @@ export function RightCard({ campaign, progress }: SideCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\hero\index.tsx
-//     intervalRef.current = setInterval(() => { if (!isGlitchingRef.current) runGlitch(!isStacksModeRef.current) }, 4500)
-//     return () => { if (intervalRef.current) clearInterval(intervalRef.current) }
-//   }, [])
-//   return (

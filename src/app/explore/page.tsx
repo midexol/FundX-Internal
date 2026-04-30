@@ -234,7 +234,3 @@ export default function ExplorePage() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\cards\RightCard.tsx
-//       </div>
-//       <div className="p-6 flex flex-col justify-between flex-1 bg-white">
