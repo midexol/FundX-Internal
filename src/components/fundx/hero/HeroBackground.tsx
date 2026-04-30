@@ -66,10 +66,10 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     const streams: Stream[] = []
     const blocks: Block[] = []
 
-    function createStream(startY?: number): Stream {
+    function createStream(startY_?: number): Stream {
       return {
         x: Math.random() * width,
-        y: startY ?? -50,
+        y: startY_ ?? -50,
         length: 100 + Math.random() * 150,
         speed: 0.5 + Math.random() * 0.7,
         opacity: 0.18 + Math.random() * 0.18,
