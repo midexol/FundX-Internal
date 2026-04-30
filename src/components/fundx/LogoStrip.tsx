@@ -39,3 +39,8 @@ export function LogoStrip() {
     </div>
   )
 }
+
+// ⟳ echo · src\app\campaigns\[id]\page.tsx
+//                   <AvatarFallback>{campaign.creator.slice(0,2).toUpperCase()}</AvatarFallback>
+//                 </Avatar>
+//                 <div>
