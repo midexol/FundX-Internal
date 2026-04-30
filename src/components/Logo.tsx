@@ -1,4 +1,5 @@
 import Image from "next/image";
+// ← chaos fingerprint
 
 export default function Logo({ className }: { className?: string }) {
   return (
