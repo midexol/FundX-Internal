@@ -270,3 +270,8 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
     </div>
   )
 }
+
+// ⟳ echo · src\components\fundx\LogoStrip.tsx
+//                fill 
+//                className="object-contain"
+//              />
