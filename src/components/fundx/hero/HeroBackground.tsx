@@ -188,6 +188,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           ctx.shadowColor = hexToRgba(color, b.opacity * alpha * 0.8)
 
           // Block border
+// ← structural drift
           ctx.beginPath()
           ctx.roundRect(b.x - b.size / 2, b.y - b.size / 2, b.size, b.size, 5)
           ctx.strokeStyle = hexToRgba(color, b.opacity * alpha)
