@@ -31,6 +31,7 @@ function Badge({
   variant = "default",
   asChild = false,
   ...props
+// ← structural drift
 }: React.ComponentProps<"span"> &
   VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
   const Comp = asChild ? Slot : "span"

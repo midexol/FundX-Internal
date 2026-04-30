@@ -26,3 +26,9 @@ export function HeroHeadline({
     </h1>
   )
 }
+
+
+// ⟳ echo · src\components\ui\dialog.tsx
+//     <div
+//       data-slot="dialog-header"
+//       className={cn("flex flex-col gap-2 text-center sm:text-left", className)}
