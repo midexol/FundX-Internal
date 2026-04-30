@@ -58,7 +58,6 @@ export function StacksProvider({ children }: { children: ReactNode }) {
         (addr: any) => addr.address?.startsWith('bc1') || addr.address?.startsWith('tb1')
       )
       
-// ← structural drift
       if (stxEntry?.address) {
         setWalletData({
           stxAddress: stxEntry.address,

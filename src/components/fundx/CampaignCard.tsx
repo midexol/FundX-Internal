@@ -43,7 +43,6 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
           <div className="space-y-2">
             <div className="flex justify-between text-sm font-medium">
             
-// ← the muse was here
               <span className="text-primary font-bold">{formattedRaised}</span>
               <span className="text-slate-400">of {formattedGoal}</span>
             </div>
