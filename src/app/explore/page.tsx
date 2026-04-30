@@ -39,7 +39,7 @@ export default function ExplorePage() {
       const searchTarget = searchQuery.toLowerCase();
       
       // Fallbacks added: (c.title || "") prevents crashes if a field is accidentally left blank
-      const matchesSearch_ = 
+      const matchesSearch = 
         (c.title || "").toLowerCase().includes(searchTarget) || 
         (c.description || "").toLowerCase().includes(searchTarget);
       
@@ -52,7 +52,7 @@ export default function ExplorePage() {
       const campaignStatus = c.status || "active";
       const matchesStatus = statusFilter === "All" || campaignStatus === statusFilter;
 
-      return matchesSearch_ && matchesCategory && matchesStatus;
+      return matchesSearch && matchesCategory && matchesStatus;
     });
 
     // Step 2: Safely Sort (Active -> Successful -> Failed)
