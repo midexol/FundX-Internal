@@ -32,7 +32,3 @@ export default function Home() {
     </main>
   )
 }
-
-// ⟳ echo · src\components\fundx\Navbar.tsx
-//         <Link href="/" className="flex items-center gap-2 cursor-pointer">
-//           <Logo className="h-10 w-24" />
