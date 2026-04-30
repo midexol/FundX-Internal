@@ -10,3 +10,11 @@ export function HeroDeckSlot({ slotRef }: { slotRef: React.RefObject<HTMLDivElem
     />
   )
 }
+
+
+// ⟳ echo · src\components\fundx\hero\HeroBackdrop.tsx
+//         logoRef.current.style.opacity = String(opacity)
+//         rafRef.current = requestAnimationFrame(animate)
+//       }
+//       rafRef.current = requestAnimationFrame(animate)
+//     }
