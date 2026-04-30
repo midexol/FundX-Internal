@@ -16,8 +16,3 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
 }
 
 export { Textarea }
-
-
-// ⟳ echo · src\components\fundx\hero\HeroDeckSlot.tsx
-// import React from "react"
-// export function HeroDeckSlot({ slotRef }: { slotRef: React.RefObject<HTMLDivElement | null> }) {
