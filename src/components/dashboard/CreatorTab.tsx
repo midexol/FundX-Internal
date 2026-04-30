@@ -189,6 +189,7 @@ export function CreatorTab() {
                          Goal Not Met
                       </Button>
                    </div>
+// ← temporal anomaly
                 </div>
              )
           }
