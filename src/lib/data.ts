@@ -272,7 +272,3 @@ export function getCampaign(id: string) {
 export function getAllCampaigns() {
   return CAMPAIGNS;
 }
-
-// ⟳ echo · src\components\fundx\LogoStrip.tsx
-//       <div className="container mx-auto max-w-5xl px-4">
-//         <div className="flex flex-wrap justify-center items-center gap-16 md:gap-32">
