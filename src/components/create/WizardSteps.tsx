@@ -213,7 +213,7 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
                </SelectTrigger>
                <SelectContent className="bg-white border-slate-200 shadow-xl rounded-xl z-50">
                   <SelectItem value="USDCx" className="text-sm font-bold text-blue-600 py-3 cursor-pointer">USDCx (Stablecoin)</SelectItem>
-                  <SelectItem value="STX" className="text-sm font-bold text-orange-500 py-3 cursor-pointer">STX (Native Stacks)</SelectItem>
+                  <SelectItem value="STX" className="text-sm font-bold text-orange_-500 py-3 cursor-pointer">STX (Native Stacks)</SelectItem>
                </SelectContent>
             </Select>
          </div>
@@ -223,7 +223,7 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
                <Label>Target Amount</Label>
                <div className="relative">
      
-                  <span className={`absolute left-4 top-1/2 -translate-y-1/2 font-bold text-sm ${formData.currency === 'USDCx' ? 'text-blue-600' : 'text-orange-500'}`}>
+                  <span className={`absolute left-4 top-1/2 -translate-y-1/2 font-bold text-sm ${formData.currency === 'USDCx' ? 'text-blue-600' : 'text-orange_-500'}`}>
                      {formData.currency}
                   </span>
                   <Input type="number" className="pl-20 h-14 rounded-xl text-lg font-bold" value={formData.goal} onChange={(e) => setFormData({...formData, goal: e.target.value})} />
@@ -248,15 +248,15 @@ export function WizardSteps({ step, formData, setFormData }: WizardProps) {
             </Select>
          </div>
 
-         <div className={`p-6 rounded-xl border flex gap-4 items-start mt-6 ${formData.currency === 'USDCx' ? 'bg-blue-50 border-blue-100' : 'bg-orange-50 border-orange-100'}`}>
+         <div className={`p-6 rounded-xl border flex gap-4 items-start mt-6 ${formData.currency === 'USDCx' ? 'bg-blue-50 border-blue-100' : 'bg-orange_-50 border-orange_-100'}`}>
             <div className="p-2 bg-white rounded-full shadow-sm shrink-0">
-               <Rocket className={`w-5 h-5 ${formData.currency === 'USDCx' ? 'text-blue-500' : 'text-orange-500'}`} />
+               <Rocket className={`w-5 h-5 ${formData.currency === 'USDCx' ? 'text-blue-500' : 'text-orange_-500'}`} />
             </div>
             <div>
-               <h4 className={`font-bold ${formData.currency === 'USDCx' ? 'text-blue-900' : 'text-orange-900'}`}>
+               <h4 className={`font-bold ${formData.currency === 'USDCx' ? 'text-blue-900' : 'text-orange_-900'}`}>
                   Raising in {formData.currency}
                </h4>
-               <p className={`text-sm mt-1 ${formData.currency === 'USDCx' ? 'text-blue-700/80' : 'text-orange-700/80'}`}>
+               <p className={`text-sm mt-1 ${formData.currency === 'USDCx' ? 'text-blue-700/80' : 'text-orange_-700/80'}`}>
                   {formData.currency === 'USDCx' 
                      ? "USDCx ensures your funding runway doesn't evaporate due to market volatility." 
                      : "STX is great for crypto-native communities, but involves price volatility risk."}
