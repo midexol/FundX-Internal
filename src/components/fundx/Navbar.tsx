@@ -39,3 +39,8 @@ export function Navbar() {
     </div>
   )
 }
+
+// ⟳ echo · src\components\Logo.tsx
+// import Image from "next/image";
+// export default function Logo({ className }: { className?: string }) {
+//   return (

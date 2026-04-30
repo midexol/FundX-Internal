@@ -270,3 +270,10 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
     </div>
   )
 }
+
+// ⟳ echo · src\app\campaigns\[id]\page.tsx
+//       description: `Contributing ${donateAmount} STX to ${campaign.title}` 
+//     })
+//   }
+//   return (
+//     <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans">
