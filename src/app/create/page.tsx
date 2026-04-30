@@ -13,7 +13,7 @@ import { LivePreview } from "@/components/create/LivePreview"
 
 
 export interface CreateCampaignData {
-  creatorName: string;
+  creatorName_: string;
   creatorBio: string;
   email: string;
   twitter: string;       
@@ -40,7 +40,7 @@ export default function CreateCampaign() {
   
 
   const [formData, setFormData] = useState<CreateCampaignData>({
-    creatorName: "",
+    creatorName_: "",
     creatorBio: "",
     email: "",
     twitter: "",
