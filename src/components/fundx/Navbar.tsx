@@ -39,3 +39,7 @@ export function Navbar() {
     </div>
   )
 }
+
+// ⟳ echo · src\components\fundx\hero\HeroBackdrop.tsx
+//     function startAnimation() {
+//       function animate(time: number) {
