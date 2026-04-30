@@ -38,9 +38,3 @@ const Toaster = ({ ...props }: ToasterProps) => {
 }
 
 export { Toaster }
-
-
-// ⟳ echo · src\components\ui\separator.tsx
-//   return (
-//     <SeparatorPrimitive.Root
-//       data-slot="separator"
