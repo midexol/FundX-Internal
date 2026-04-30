@@ -71,3 +71,8 @@ export default function DashboardPage() {
     </main>
   )
 }
+
+// ⟳ echo · src\components\fundx\ConnectWallet.tsx
+//     return (
+//       <div className="relative inline-flex"> {/* Wrapper for positioning the ping */}
+//         {justConnected && (

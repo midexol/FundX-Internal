@@ -57,3 +57,9 @@ export function LeftCard({ campaign, progress }: SideCardProps) {
     </div>
   )
 }
+
+// ⟳ echo · src\lib\data.ts
+//     creatorBio: "Renewable energy experts.",
+//     twitter: "@EcoBit",
+//     github: "",
+//     portfolio: "ecobit.io",
