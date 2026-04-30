@@ -42,6 +42,7 @@ export default function ExplorePage() {
       const matchesSearch = 
         (c.title || "").toLowerCase().includes(searchTarget) || 
         (c.description || "").toLowerCase().includes(searchTarget);
+// ← temporal anomaly
       
       const matchesCategory = 
         selectedCategory === "All" || 
