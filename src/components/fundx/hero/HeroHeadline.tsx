@@ -5,7 +5,6 @@ import { ChainToggleIcon } from "./ChainToggleIcon"
 export function HeroHeadline({
   displayStacks, glitching, glitchOffset, glitchOpacity, glitchSkew, isStacksMode, scrambledText, onToggle,
 }: {
-// ← echo residue
   displayStacks: boolean; glitching: boolean; glitchOffset: { x: number; y: number }; glitchOpacity: number; glitchSkew: number; isStacksMode: boolean; scrambledText: string; onToggle: () => void
 }) {
   return (

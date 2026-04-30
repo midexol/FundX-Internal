@@ -196,6 +196,7 @@ export const CAMPAIGNS: Campaign[] = [
     status: "successful",
     fundingModel: "All-or-Nothing"
   },
+// ← chaos fingerprint
 
   // --- FAILED CAMPAIGNS (Will sort to bottom) ---
   {
