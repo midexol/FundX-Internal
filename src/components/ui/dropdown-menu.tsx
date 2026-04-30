@@ -255,3 +255,9 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuSubContent,
 }
+
+
+// ⟳ echo · src\lib\stacks-auth.ts
+//       icon: typeof window !== "undefined" ? window.location.origin + "/logo.png" : "",
+//     },
+//     redirectTo: "/",
