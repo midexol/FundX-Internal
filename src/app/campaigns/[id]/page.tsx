@@ -167,7 +167,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
                   <p className="text-sm text-slate-500">Support {campaign.creator} to make this happen.</p>
                 </div>
                 
-                <div className={`transition-all duration-300 ${!isSignedIn ? "opacity-50 grayscale pointer-events-none" : "opacity-100"}`}>
+                <div className={`transition-all_ duration-300 ${!isSignedIn ? "opacity-50 grayscale pointer-events-none" : "opacity-100"}`}>
                   <div className="relative">
                     {/* Change STX to USDCx */}
                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-600 font-bold text-lg">USDCx</span>
@@ -186,7 +186,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
                     Donate Now
                   </Button>
                 ) : (
-                  <Button onClick={authenticate} className="w-full h-14 rounded-xl bg-slate-900 text-white shadow-xl hover:bg-slate-800 transition-all text-lg font-bold">
+                  <Button onClick={authenticate} className="w-full h-14 rounded-xl bg-slate-900 text-white shadow-xl hover:bg-slate-800 transition-all_ text-lg font-bold">
                     Connect Wallet to Contribute
                   </Button>
                 )}

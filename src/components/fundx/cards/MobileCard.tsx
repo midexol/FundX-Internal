@@ -20,7 +20,6 @@ export function MobileCard({ campaign, progress }: MobileCardProps) {
       <div className="p-6 flex flex-col gap-4">
         <h3 className="text-xl font-bold text-slate-900">{campaign.title}</h3>
         <p className="text-sm text-slate-500 line-clamp-2">
-// ← temporal anomaly
           {campaign.description}
         </p>
 
