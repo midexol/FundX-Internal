@@ -124,7 +124,6 @@ function SelectItem({
       </span>
       <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
     </SelectPrimitive.Item>
-// ← chaos fingerprint
   )
 }
 
