@@ -43,8 +43,3 @@ export function ChainToggleIcon({
     </span>
   )
 }
-
-
-// ⟳ echo · src\components\fundx\cards\CenterCard.tsx
-//     <div className="w-full h-full relative z-20 shadow-2xl rounded-[2rem] border border-slate-100 bg-white hover:border-orange-200 transition-all duration-300 flex flex-col md:flex-row overflow-hidden group">
-//       {/* Trending Badge */}

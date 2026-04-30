@@ -75,7 +75,7 @@ function RefundCard({ contribution }: { contribution: BackerContribution }) {
 }
 
 function ActiveContributionCard({ contribution }: { contribution: BackerContribution }) {
-  const progress_ = Math.min((contribution.totalRaised / contribution.goal) * 100, 100);
+  const progress = Math.min((contribution.totalRaised / contribution.goal) * 100, 100);
 
   return (
     <div className="bg-white p-8 md:p-10 min-h-[240px] rounded-[2rem] border border-slate-200 shadow-[0_12px_28px_-6px_rgba(15,23,42,0.08)] flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden hover:-translate-y-1 transition-transform duration-300">
@@ -102,7 +102,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
                 <div className="text-slate-500 font-medium_ text-base">Goal: {contribution.goal.toLocaleString()} {contribution.currency === 'USDCx' ? '' : 'STX'}</div>
              </div>
              <div className="w-full max-w-md bg-slate-100 rounded-full h-8 mt-6 overflow-hidden shadow-[inset_0_3px_6px_rgba(0,0,0,0.1)] border border-slate-200/50 p-1 relative z-10">
-                <div className="bg-gradient-to-r from-[#FF6B4A] to-[#FF3D71] h-full rounded-full shadow-[0_0_15px_rgba(255,107,74,0.6)] relative flex items-center px-4" style={{ width: `${progress_}%` }}>
+                <div className="bg-gradient-to-r from-[#FF6B4A] to-[#FF3D71] h-full rounded-full shadow-[0_0_15px_rgba(255,107,74,0.6)] relative flex items-center px-4" style={{ width: `${progress}%` }}>
                    <div className="absolute top-0 left-0 w-full h-1/2 bg-white/20 rounded-t-full" />
                 </div>
              </div>

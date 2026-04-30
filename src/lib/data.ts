@@ -190,7 +190,6 @@ export const CAMPAIGNS: Campaign[] = [
     videoUrl: "",
     budgetBreakdown: "Server costs and Dev time",
     roadmap: "Beta live now",
-// ← chaos fingerprint
     daysLeft: 0,
     backers: 89,
     isTrending: false,
