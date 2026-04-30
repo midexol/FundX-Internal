@@ -17,6 +17,5 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
     />
   )
 }
-// ← echo residue
 
 export { Input }
