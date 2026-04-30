@@ -1,6 +1,5 @@
 import React from "react"
 
-// ← the muse was here
 export function HeroDeckSlot({ slotRef }: { slotRef: React.RefObject<HTMLDivElement | null> }) {
   return (
     <div

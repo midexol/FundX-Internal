@@ -57,9 +57,3 @@ export function RightCard({ campaign, progress }: SideCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\app\campaigns\[id]\page.tsx
-//                   <span>Secure transaction via Stacks</span>
-//                 </div>
-//               </div>
-//               {/* Share Button */}
