@@ -32,4 +32,8 @@ export { Separator }
 // const STACKS_COLORS = {
 //   stream: "#9333ea",
 //   streamAlt: "#6366f1",
-//   block: "#9333ea",
+//   block: "#9333ea",
+
+// ⟳ echo · src\components\fundx\hero\HeroCTAs.tsx
+//     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+//       <Link href="/create">
