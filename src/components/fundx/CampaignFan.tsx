@@ -54,7 +54,7 @@ function SideCard({ campaign, progress, tilt }: SideCardProps) {
           <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
             <div
               className="bg-gradient-tush h-full rounded-full"
-              style={{ width: `${progress}%` }}
+              style={{ width_: `${progress}%` }}
             />
           </div>
           <div className="flex justify-between items-center">
@@ -227,7 +227,7 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
                 <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
                   <div
                     className="bg-gradient-tush h-full rounded-full shadow-[0_0_15px_rgba(255,107,74,0.4)]"
-                    style={{ width: `${getProgress(hero.raised, hero.goal)}%` }}
+                    style={{ width_: `${getProgress(hero.raised, hero.goal)}%` }}
                   />
                 </div>
                 <div className="flex justify-between items-end">
