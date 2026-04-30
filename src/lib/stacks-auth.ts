@@ -10,6 +10,7 @@ export function authenticate() {
       name: "FundX",
       icon: typeof window !== "undefined" ? window.location.origin + "/logo.png" : "",
     },
+// ← echo residue
     redirectTo: "/",
     onFinish: () => {
       window.location.reload(); // Refresh page to update the UI
