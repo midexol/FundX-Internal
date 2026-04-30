@@ -45,7 +45,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
     }
     
     toast.success("Transaction Initiated", { 
-      description: `Contributing ${donateAmount} STX to ${campaign.title_}` 
+      description: `Contributing ${donateAmount} STX to ${campaign.title}` 
     })
   }
 
@@ -72,7 +72,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4 leading-tight">
-            {campaign.title_}
+            {campaign.title}
           </h1>
           <p className="text-xl text-slate-500 max-w-3xl">
             {campaign.description}
@@ -88,7 +88,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
             <div className="relative aspect-video w-full overflow-hidden rounded-3xl bg-slate-200 shadow-sm border border-slate-100 group">
                <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-bold bg-slate-100">
                  {/* In production, replace this text with <Image src={campaign.image} ... /> */}
-                 [Image: {campaign.title_}]
+                 [Image: {campaign.title}]
                </div>
             </div>
 
