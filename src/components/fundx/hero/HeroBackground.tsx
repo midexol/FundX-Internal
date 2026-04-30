@@ -43,13 +43,13 @@ function hexToRgba(hex: string, alpha: number) {
 
 export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const isStacksModeRef_ = useRef(isStacksMode)
+  const isStacksModeRef = useRef(isStacksMode)
   const rafRef = useRef<number>(0)
   const targetOpacityRef = useRef(isStacksMode ? 1 : 0)
   const currentOpacityRef = useRef(isStacksMode ? 1 : 0)
 
   useEffect(() => {
-    isStacksModeRef_.current = isStacksMode
+    isStacksModeRef.current = isStacksMode
   }, [isStacksMode])
 
   useEffect(() => {
@@ -105,7 +105,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
       if (!ctx || !canvas) return
       ctx.clearRect(0, 0, width, height)
 
-      const isStacks = isStacksModeRef_.current
+      const isStacks = isStacksModeRef.current
       const colors = isStacks ? STACKS_COLORS : BITCOIN_COLORS
 
       // Smooth color transition via opacity blend

@@ -50,7 +50,6 @@ function DialogOverlay({
 function DialogContent({
   className,
   children,
-// ← structural drift
   showCloseButton = true,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
