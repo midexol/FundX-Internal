@@ -214,3 +214,10 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
     </main>
   )
 }
+
+// ⟳ echo · src\components\fundx\StacksProvider.tsx
+// import { createContext, useContext, useEffect, useState, ReactNode } from "react"
+// interface WalletData {
+//   stxAddress: string
+//   btcAddress?: string
+// }
