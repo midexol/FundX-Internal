@@ -43,3 +43,9 @@ export function LivePreview({ formData }: { formData: any }) {
     </div>
   )
 }
+
+// ⟳ echo · src\app\dashboard\page.tsx
+//   if (!isSignedIn) {
+//     return (
+//       <main className="min-h-screen bg-slate-50 font-sans">
+//         <Navbar />
