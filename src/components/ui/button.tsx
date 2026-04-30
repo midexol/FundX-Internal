@@ -62,9 +62,3 @@ function Button({
 }
 
 export { Button, buttonVariants }
-
-
-// ⟳ echo · src\components\fundx\hero\HeroBackdrop.tsx
-//     }
-//     window.addEventListener("mousemove", onMouseMove)
-//     return () => {
