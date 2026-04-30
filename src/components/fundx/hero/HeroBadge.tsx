@@ -12,3 +12,8 @@ export function HeroBadge() {
     </div>
   )
 }
+
+
+// ⟳ echo · src\components\ui\badge.tsx
+//   const Comp = asChild ? Slot : "span"
+//   return (

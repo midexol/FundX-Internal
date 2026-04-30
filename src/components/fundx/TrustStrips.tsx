@@ -29,3 +29,10 @@ export function TrustStrip() {
     </div>
   )
 }
+
+// ⟳ echo · src\lib\data.ts
+//     creatorBio: "Senior protocol engineer.",
+//     twitter: "@AlexBuilds",
+//     github: "github.com/alexsmith",
+//     portfolio: "alexsmith.dev",
+//     videoUrl: "",
