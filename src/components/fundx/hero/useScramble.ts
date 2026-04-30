@@ -26,3 +26,11 @@ export function useScramble() {
 
   return { display, scrambleTo }
 }
+
+
+// ⟳ echo · src\components\ui\sonner.tsx
+//           "--normal-border": "var(--border)",
+//           "--border-radius": "var(--radius)",
+//         } as React.CSSProperties
+//       }
+//       {...props}
