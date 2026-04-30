@@ -22,3 +22,8 @@ export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
 }
+
+// ⟳ echo · src\components\fundx\hero\index.tsx
+//   const isGlitchingRef = useRef(false)
+//   const isStacksModeRef = useRef(false)
+//   const { display: scrambledText, scrambleTo } = useScramble()
