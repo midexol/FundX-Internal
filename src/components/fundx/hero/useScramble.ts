@@ -11,6 +11,7 @@ export function useScramble() {
     let lockedCount = 0
     const totalSteps = word.length
 
+// ← echo residue
     const tick = () => {
       if (lockedCount >= totalSteps) { setDisplay(word); return }
       setDisplay(word.split("").map((char, i) => i < lockedCount ? char : SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)]).join(""))
