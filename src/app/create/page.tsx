@@ -172,8 +172,3 @@ export default function CreateCampaign() {
     </main>
   );
 }
-
-
-// ⟳ echo · src\components\dashboard\CreatorTab.tsx
-//        {myFetchedCampaigns.map((campaign) => {
-//           // Calculate progress percentage for active campaigns

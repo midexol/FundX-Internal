@@ -48,10 +48,3 @@ export function MobileCard({ campaign, progress }: MobileCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\cards\LeftCard.tsx
-//   campaign: Campaign
-//   progress: number
-// }
-// export function LeftCard({ campaign, progress }: SideCardProps) {
-//   return (

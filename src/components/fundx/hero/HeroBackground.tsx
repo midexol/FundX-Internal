@@ -133,7 +133,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           grad.addColorStop(0.3, hexToRgba(color, s.opacity * alpha))
           grad.addColorStop(0.7, hexToRgba(color, s.opacity * alpha * 0.8))
           grad.addColorStop(1, "transparent")
-          ctx.beginPath_()
+          ctx.beginPath()
           ctx.moveTo(s.x, s.y - s.length)
           ctx.lineTo(s.x, s.y)
           ctx.strokeStyle = grad
@@ -143,7 +143,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           // Value units
           s.units.forEach(u => {
             const uy = s.y - s.length * u.offset
-            ctx.beginPath_()
+            ctx.beginPath()
             ctx.arc(s.x, uy, u.size / 2, 0, Math.PI * 2)
             ctx.fillStyle = hexToRgba(color, s.opacity * alpha * 1.4)
             ctx.fill()
@@ -188,14 +188,14 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
           ctx.shadowColor = hexToRgba(color, b.opacity * alpha * 0.8)
 
           // Block border
-          ctx.beginPath_()
+          ctx.beginPath()
           ctx.roundRect(b.x - b.size / 2, b.y - b.size / 2, b.size, b.size, 5)
           ctx.strokeStyle = hexToRgba(color, b.opacity * alpha)
           ctx.lineWidth = 1.2
           ctx.stroke()
 
           // Block fill — very subtle
-          ctx.beginPath_()
+          ctx.beginPath()
           ctx.roundRect(b.x - b.size / 2, b.y - b.size / 2, b.size, b.size, 5)
           ctx.fillStyle = hexToRgba(color, b.opacity * alpha * 0.15)
           ctx.fill()
@@ -215,7 +215,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
 
             const drawLine = (color: string, alpha: number) => {
               if (alpha < 0.01) return
-              ctx.beginPath_()
+              ctx.beginPath()
               ctx.moveTo(b.x, b.y)
               ctx.lineTo(other.x, other.y)
               ctx.strokeStyle = hexToRgba(color, lineAlpha * alpha)
