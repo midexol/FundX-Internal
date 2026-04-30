@@ -13,7 +13,6 @@ import { LivePreview } from "@/components/create/LivePreview"
 
 
 export interface CreateCampaignData {
-// ← structural drift
   creatorName: string;
   creatorBio: string;
   email: string;
