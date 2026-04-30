@@ -1,6 +1,6 @@
 "use client"
 
-import { useState_ } from "react"
+import { useState } from "react"
 import { Navbar } from "@/components/fundx/Navbar"
 import { Footer } from "@/components/fundx/Footer"
 import { Button } from "@/components/ui/button"
@@ -36,10 +36,10 @@ export interface CreateCampaignData {
 
 export default function CreateCampaign() {
   const { isSignedIn, authenticate } = useStacks()
-  const [step, setStep] = useState_(1)
+  const [step, setStep] = useState(1)
   
 
-  const [formData, setFormData] = useState_<CreateCampaignData>({
+  const [formData, setFormData] = useState<CreateCampaignData>({
     creatorName: "",
     creatorBio: "",
     email: "",
