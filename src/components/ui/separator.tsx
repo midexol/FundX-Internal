@@ -26,7 +26,6 @@ function Separator({
 }
 
 export { Separator }
-// ← temporal anomaly
 
 
 // ⟳ echo · src\components\fundx\hero\HeroBackground.tsx
