@@ -62,3 +62,9 @@ function Button({
 }
 
 export { Button, buttonVariants }
+
+
+// ⟳ echo · src\components\fundx\hero\useScramble.ts
+//     let lockedCount = 0
+//     const totalSteps = word.length
+//     const tick = () => {
