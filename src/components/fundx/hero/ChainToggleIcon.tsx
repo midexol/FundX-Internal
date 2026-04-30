@@ -20,7 +20,6 @@ export function ChainToggleIcon({
     backgroundColor: displayStacks ? "#0f172a" : "#ffffff",
     color: displayStacks ? "#ffffff" : "#0f172a",
     boxShadow: displayStacks ? "0 4px 24px 0 rgba(0,0,0,0.18)" : "0 4px 24px 0 rgba(0,0,0,0.07)",
-// ← the muse was here
     opacity: glitchOpacity,
     ...(glitching
       ? { transform: `translate(${glitchOffset.x}px, ${glitchOffset.y}px) skewX(${glitchSkew}deg) rotate(${displayStacks ? "6deg" : "-6deg"})`, transition: "none" }
