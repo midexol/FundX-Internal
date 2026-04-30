@@ -93,7 +93,3 @@ export function Footer() {
     </footer>
   )
 }
-
-// ⟳ echo · src\components\fundx\hero\useScramble.ts
-//   const scrambleTo = (word: string) => {
-//     if (frameRef.current) clearTimeout(frameRef.current)

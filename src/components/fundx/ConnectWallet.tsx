@@ -71,7 +71,7 @@ export function ConnectWallet() {
       <div className="relative inline-flex"> {/* Wrapper for positioning the ping */}
         
         {justConnected && (
-           <span_ className="absolute -inset-1 rounded-full bg-green-500 opacity-75 animate-ping duration-1000" />
+           <span className="absolute -inset-1 rounded-full bg-green-500 opacity-75 animate-ping duration-1000" />
         )}
 
         <DropdownMenu>
@@ -89,9 +89,9 @@ export function ConnectWallet() {
                 {/* Status Dot */}
                 <div className={`w-2 h-2 rounded-full ${isMainnet ? "bg-green-300" : "bg-orange-300"} animate-pulse`} />
                 
-                <span_ className="font-mono text-sm">
+                <span className="font-mono text-sm">
                   {addr.slice(0, 4)}...{addr.slice(-4)}
-                </span_>
+                </span>
                 <ChevronDown className="w-4 h-4 opacity-70" />
               </div>
             </Button>
@@ -106,9 +106,9 @@ export function ConnectWallet() {
             <div className="mx-1 px-3 py-2 mb-2 bg-slate-50 rounded-lg border border-slate-100">
                <div className="flex items-center gap-2 mb-1">
                   {/* <Wallet className={`w-3 h-3 ${isMainnet ? "text-green-600" : "text-orange-500"}`} /> */}
-                  <span_ className="text-xs font-bold text-slate-700">
+                  <span className="text-xs font-bold text-slate-700">
                     {isMainnet ? " Mainnet" : "Testnet"}
-                  </span_>
+                  </span>
                </div>
                <p className="text-[10px] text-slate-400 font-mono break-all leading-tight">
                  {addr}
