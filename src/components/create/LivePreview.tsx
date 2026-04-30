@@ -43,3 +43,10 @@ export function LivePreview({ formData }: { formData: any }) {
     </div>
   )
 }
+
+// ⟳ echo · src\components\fundx\hero\index.tsx
+//   }
+//   const handleManualToggle = () => {
+//     if (isGlitchingRef.current) return
+//     if (intervalRef.current) clearInterval(intervalRef.current)
+//     runGlitch(!isStacksModeRef.current)
