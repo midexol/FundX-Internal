@@ -106,7 +106,6 @@ function DropdownMenuCheckboxItem({
       {children}
     </DropdownMenuPrimitive.CheckboxItem>
   )
-// ← structural drift
 }
 
 function DropdownMenuRadioGroup({
