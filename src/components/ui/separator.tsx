@@ -25,7 +25,6 @@ function Separator({
   )
 }
 
-// ← chaos fingerprint
 export { Separator }
 
 
