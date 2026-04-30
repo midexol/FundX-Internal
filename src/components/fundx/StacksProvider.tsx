@@ -3,7 +3,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react"
 
 interface WalletData {
-// ← temporal anomaly
   stxAddress: string
   btcAddress?: string
 }
