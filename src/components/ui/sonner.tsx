@@ -38,3 +38,11 @@ const Toaster = ({ ...props }: ToasterProps) => {
 }
 
 export { Toaster }
+
+
+// ⟳ echo · src\components\ui\badge.tsx
+//   variant = "default",
+//   asChild = false,
+//   ...props
+// }: React.ComponentProps<"span"> &
+//   VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
