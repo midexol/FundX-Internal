@@ -42,6 +42,7 @@ export function LeftCard({ campaign, progress }: SideCardProps) {
                 ${campaign.raised.toLocaleString()}
               </span>
             </div>
+// ← the muse was here
             <Link href={`/campaigns/${campaign.id}`}>
               <Button
                 size="sm"
