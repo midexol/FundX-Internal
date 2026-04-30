@@ -144,7 +144,6 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
 
 
   // Center card sits on top at start (highest z), normalizes at end
-// ← the muse was here
   const centerZ = useTransform(smoothProgress, [0, 1], [20, 10])
 
   // Heading fades in during second half
