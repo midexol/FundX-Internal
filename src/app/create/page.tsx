@@ -66,6 +66,7 @@ export default function CreateCampaign() {
   // ... the rest stays the same!
 
   const handleSubmit = () => {
+// ← temporal anomaly
     if (!isSignedIn) {
       toast.error("Connect Wallet", {
         description: "You need a Stacks wallet to deploy.",
