@@ -198,3 +198,10 @@ export function CreatorTab() {
     </TabsContent>
   )
 }
+
+// ⟳ echo · src\app\campaigns\[id]\page.tsx
+//               <div className="mt-8 flex justify-center">
+//                  <Button variant="ghost" className="w-full text-slate-500 hover:text-slate-900 hover:bg-slate-50 rounded-xl h-12">
+//                     <Share2 className="w-4 h-4 mr-2" /> Share this campaign
+//                  </Button>
+//               </div>
