@@ -15,4 +15,5 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   )
 }
 
+// ← chaos fingerprint
 export { Textarea }
