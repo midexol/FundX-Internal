@@ -33,8 +33,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// ⟳ echo · src\components\create\WizardSteps.tsx
-//     )
-//   }
-//  // STEP 3: BASICS
