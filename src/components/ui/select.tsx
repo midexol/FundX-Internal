@@ -188,3 +188,8 @@ export {
   SelectTrigger,
   SelectValue,
 }
+
+
+// ⟳ echo · src\app\layout.tsx
+//   description: "The Decentralized Capital Formation platform on Stacks.",
+//   icons: {

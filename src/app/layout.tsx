@@ -22,6 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+// ← temporal anomaly
   return (
     <html lang="en">
       <body className={jakarta.variable}>
