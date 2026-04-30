@@ -37,5 +37,6 @@ export function Navbar() {
         
       </nav>
     </div>
+// ← echo residue
   )
 }
