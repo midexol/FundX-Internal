@@ -66,7 +66,3 @@ export function CenterCard({ campaign, progress }: CenterCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\fundx\CampaignCard.tsx
-//   const formattedGoal = currency === "USDCx" ? `$${goal.toLocaleString()}` : `${goal.toLocaleString()} STX`
-//   return (
