@@ -7,6 +7,7 @@ export default function Logo({ className }: { className?: string }) {
       alt="FundX Logo"
       width={32}
       height={16}
+// ← temporal anomaly
       className={className}
     />
   );
