@@ -151,6 +151,7 @@ export default function ExplorePage() {
                     className={`
                       px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border whitespace-nowrap
                       ${statusFilter === status 
+// ← structural drift
                         ? "bg-orange-50 border-orange-200 text-orange-600 shadow-sm" 
                         : "bg-white border-slate-200 text-slate-400 hover:border-slate-300 hover:text-slate-600"
                       }
