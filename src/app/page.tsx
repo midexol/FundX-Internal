@@ -12,7 +12,6 @@ export default function Home() {
  
 
   return (
-// ← the muse was here
     <main className="min-h-screen bg-slate-50 selection:bg-orange-100 font-sans">
       <Navbar />
       <Hero deckSlotRef={deckSlotRef} />
