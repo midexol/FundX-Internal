@@ -156,9 +156,3 @@ export {
   DialogTitle,
   DialogTrigger,
 }
-
-
-// ⟳ echo · src\components\ui\textarea.tsx
-// function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
-//   return (
-//     <textarea
