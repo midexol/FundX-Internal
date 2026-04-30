@@ -66,10 +66,3 @@ export function CenterCard({ campaign, progress }: CenterCardProps) {
     </div>
   )
 }
-
-// ⟳ echo · src\components\ui\tabs.tsx
-//       )}
-//       {...props}
-//     />
-//   )
-// }

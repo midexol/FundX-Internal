@@ -1,5 +1,4 @@
 "use client"
-// ← structural drift
 import { ChainToggleSwitch } from "./ChainToggleSwitch"
 import { ChainToggleIcon } from "./ChainToggleIcon"
 

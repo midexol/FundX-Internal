@@ -95,10 +95,3 @@ export function useStacks() {
   }
   return context
 }
-
-// ⟳ echo · src\components\ui\avatar.tsx
-//     <AvatarPrimitive.Image
-//       data-slot="avatar-image"
-//       className={cn("aspect-square size-full", className)}
-//       {...props}
-//     />

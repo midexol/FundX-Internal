@@ -18,8 +18,3 @@ export function HeroCTAs() {
     </div>
   )
 }
-
-
-// ⟳ echo · src\components\fundx\hero\ChainToggleSwitch.tsx
-// "use client"
-// export function ChainToggleSwitch({ isStacksMode, onToggle }: { isStacksMode: boolean; onToggle: () => void }) {

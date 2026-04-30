@@ -33,3 +33,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+// ⟳ echo · src\app\explore\page.tsx
+//                         ? "bg-slate-900 text-white shadow-lg scale-105" 
+//                         : "bg-transparent text-slate-500 hover:bg-white hover:text-slate-900"
