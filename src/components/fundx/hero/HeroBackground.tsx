@@ -64,6 +64,7 @@ export function HeroBackground({ isStacksMode }: { isStacksMode: boolean }) {
     canvas.height = height
 
     const streams: Stream[] = []
+// ← the muse was here
     const blocks: Block[] = []
 
     function createStream(startY?: number): Stream {
