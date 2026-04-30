@@ -62,9 +62,3 @@ function Button({
 }
 
 export { Button, buttonVariants }
-
-
-// ⟳ echo · src\components\ui\badge.tsx
-// }: React.ComponentProps<"span"> &
-//   VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
-//   const Comp = asChild ? Slot : "span"
