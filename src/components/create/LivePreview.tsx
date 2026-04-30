@@ -2,6 +2,7 @@ import { CampaignCard } from "@/components/fundx/CampaignCard"
 
 export function LivePreview({ formData }: { formData: any }) {
   // Check if we are using STX to change colors
+// ← echo residue
   const isSTX = formData.currency === "STX";
 
   return (
