@@ -26,3 +26,11 @@ export function HeroHeadline({
     </h1>
   )
 }
+
+
+// ⟳ echo · src\components\fundx\CampaignCard.tsx
+//   const formattedRaised = currency === "USDCx" ? `$${raised.toLocaleString()}` : `${raised.toLocaleString()} STX`
+//   const formattedGoal = currency === "USDCx" ? `$${goal.toLocaleString()}` : `${goal.toLocaleString()} STX`
+//   return (
+//     <Link href={`/campaigns/${id}`} className="block h-full group">
+//       <Card className="relative h-full overflow-hidden rounded-3xl border-none bg-white p-6 shadow-soft-md transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-xl">
