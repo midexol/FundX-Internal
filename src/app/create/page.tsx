@@ -172,3 +172,9 @@ export default function CreateCampaign() {
     </main>
   );
 }
+
+
+// ⟳ echo · src\components\fundx\StacksProvider.tsx
+//   }, [])
+//   const authenticate = async () => {
+//     try {

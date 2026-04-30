@@ -234,3 +234,9 @@ export default function ExplorePage() {
     </main>
   )
 }
+
+// ⟳ echo · src\components\fundx\hero\useScramble.ts
+//   }
+//   useEffect(() => {
+//     return () => { if (frameRef.current) clearTimeout(frameRef.current) }
+//   }, [])
