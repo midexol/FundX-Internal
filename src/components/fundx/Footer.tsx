@@ -93,3 +93,10 @@ export function Footer() {
     </footer>
   )
 }
+
+// ⟳ echo · src\components\fundx\cards\CenterCard.tsx
+//           [Image]
+//         </div>
+//       </div>
+//       {/* Content Side */}
+//       <div className="flex flex-col justify-between p-8 md:w-7/12 h-full bg-white">
