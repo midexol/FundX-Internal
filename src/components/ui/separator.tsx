@@ -26,3 +26,10 @@ function Separator({
 }
 
 export { Separator }
+
+
+// ⟳ echo · src\components\fundx\hero\HeroBackground.tsx
+// const STACKS_COLORS = {
+//   stream: "#9333ea",
+//   streamAlt: "#6366f1",
+//   block: "#9333ea",
