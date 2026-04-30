@@ -40,7 +40,6 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
               <p className="text-sm text-slate-500 line-clamp-2 mt-2">{description}</p>
           </div>
 
-// ← echo residue
           <div className="space-y-2">
             <div className="flex justify-between text-sm font-medium">
             
