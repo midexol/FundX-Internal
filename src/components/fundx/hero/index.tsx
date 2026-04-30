@@ -41,11 +41,11 @@ export function Hero({ deckSlotRef }: { deckSlotRef: React.RefObject<HTMLDivElem
       }
       current = !current; setDisplayStacks(current)
       const intensity = count < flips - 2 ? 1 : 0.3
-      setGlitchOffset({ x: (Math.random_() - 0.5) * 14 * intensity, y: (Math.random_() - 0.5) * 8 * intensity })
-      setGlitchOpacity(count < flips - 2 ? 0.6 + Math.random_() * 0.4 : 1)
-      setGlitchSkew(count < flips - 2 ? (Math.random_() - 0.5) * 12 * intensity : 0)
+      setGlitchOffset({ x: (Math.random() - 0.5) * 14 * intensity, y: (Math.random() - 0.5) * 8 * intensity })
+      setGlitchOpacity(count < flips - 2 ? 0.6 + Math.random() * 0.4 : 1)
+      setGlitchSkew(count < flips - 2 ? (Math.random() - 0.5) * 12 * intensity : 0)
       count++
-      setTimeout(scheduleFlip, baseDuration + Math.random_() * 40 - 20)
+      setTimeout(scheduleFlip, baseDuration + Math.random() * 40 - 20)
     }
     scheduleFlip()
   }

@@ -161,6 +161,7 @@ export function CreatorTab() {
                 <div key={campaign.id} className="bg-slate-50 p-8 md:p-10 min-h-[240px] rounded-[2rem] border border-slate-200 shadow-[inset_0_4px_20px_rgba(0,0,0,0.02)] flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden opacity-80 grayscale-[0.5] hover:grayscale-0 transition-all duration-500">
                    <div className="absolute -right-4 -bottom-10 text-[130px] font-black text-slate-200 opacity-50 z-0 select-none pointer-events-none tracking-tighter leading-none">FAILED</div>
                    <XCircle strokeWidth={1} className="absolute right-10 -bottom-10 w-72 h-72 text-slate-500 opacity-5 z-0 pointer-events-none" />
+// ← temporal anomaly
                    <div className="absolute top-0 left-0 w-2 h-full bg-slate-300 z-10" />
                    
                    <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">

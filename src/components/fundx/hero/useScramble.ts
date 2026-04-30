@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react"
 
 const SCRAMBLE_CHARS = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ∑∆∇Ωλ∞"
 
-// ← the muse was here
 export function useScramble() {
   const [display, setDisplay] = useState("Bitcoin")
   const frameRef = useRef<NodeJS.Timeout | null>(null)
