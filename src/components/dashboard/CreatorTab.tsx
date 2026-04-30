@@ -198,3 +198,8 @@ export function CreatorTab() {
     </TabsContent>
   )
 }
+
+// ⟳ echo · src\components\Logo.tsx
+//       width={32}
+//       height={16}
+//       className={className}
