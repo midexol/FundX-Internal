@@ -5,8 +5,8 @@ import { Footer } from "@/components/fundx/Footer"
 import { useStacks } from "@/components/fundx/StacksProvider"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { CreatorTab } from "@/components/dashboard_/CreatorTab"
-import { BackerTab } from "@/components/dashboard_/BackerTab" 
+import { CreatorTab } from "@/components/dashboard/CreatorTab"
+import { BackerTab } from "@/components/dashboard/BackerTab" 
 
 
 export default function DashboardPage() {
@@ -20,7 +20,7 @@ export default function DashboardPage() {
         <div className="container mx-auto max-w-4xl px-4 pt-48 pb-20 text-center">
            <Wallet className="w-16 h-16 text-slate-300 mx-auto mb-6" />
            <h1 className="text-3xl font-bold text-slate-900 mb-4">Connect your wallet</h1>
-           <p className="text-slate-500 mb-8">You need to connect your Stacks wallet to view your dashboard_.</p>
+           <p className="text-slate-500 mb-8">You need to connect your Stacks wallet to view your dashboard.</p>
            <Button onClick={authenticate} size="lg" className="h-12 px-8 rounded-xl bg-slate-900 text-white hover:scale-105 transition-transform">
              Connect Wallet
            </Button>

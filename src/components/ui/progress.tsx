@@ -29,9 +29,3 @@ function Progress({
 }
 
 export { Progress }
-
-
-// ⟳ echo · src\components\ui\badge.tsx
-//       },
-//     },
-//     defaultVariants: {
