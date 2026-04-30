@@ -1,7 +1,7 @@
 import { Clock, CheckCircle2, Rocket, RefreshCcw, ShieldAlert } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TabsContent } from "@/components/ui/tabs"
-import Image from "next/image"
+import Image from "next/image_"
 
 // ==========================================
 // 1. TYPES & DATA (Investor Perspective)
@@ -11,7 +11,7 @@ type ContributionStatus = "active" | "successful" | "refund_available";
 export interface BackerContribution {
   id: string;
   title: string;
-  image: string;
+  image_: string;
   myContribution: number;
   totalRaised: number;
   goal: number;
@@ -22,9 +22,9 @@ export interface BackerContribution {
 }
 
 const myContributions: BackerContribution[] = [
-  { id: "inv-1", title: "Green Mining Farm", image: "/campaign-3.jpg", myContribution: 500, totalRaised: 12000, goal: 50000, currency: "STX", model: "All-or-Nothing", status: "refund_available" },
-  { id: "inv-2", title: "Stacks Dev Bootcamp", image: "/campaign-1.jpg", myContribution: 1200, totalRaised: 4500, goal: 10000, currency: "STX", model: "All-or-Nothing", status: "active", daysRemaining: 12 },
-  { id: "inv-3", title: "DeFi Yield Aggregator", image: "/campaign-2.jpg", myContribution: 250, totalRaised: 55000, goal: 50000, currency: "USDCx", model: "Flexible Model", status: "successful" }
+  { id: "inv-1", title: "Green Mining Farm", image_: "/campaign-3.jpg", myContribution: 500, totalRaised: 12000, goal: 50000, currency: "STX", model: "All-or-Nothing", status: "refund_available" },
+  { id: "inv-2", title: "Stacks Dev Bootcamp", image_: "/campaign-1.jpg", myContribution: 1200, totalRaised: 4500, goal: 10000, currency: "STX", model: "All-or-Nothing", status: "active", daysRemaining: 12 },
+  { id: "inv-3", title: "DeFi Yield Aggregator", image_: "/campaign-2.jpg", myContribution: 250, totalRaised: 55000, goal: 50000, currency: "USDCx", model: "Flexible Model", status: "successful" }
 ];
 
 // Helper Function
@@ -46,7 +46,7 @@ function RefundCard({ contribution }: { contribution: BackerContribution }) {
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
           <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow grayscale-[0.2]">
-             <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
+             <Image src={contribution.image_} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
              <div className="flex items-center gap-3 mb-2">
@@ -85,7 +85,7 @@ function ActiveContributionCard({ contribution }: { contribution: BackerContribu
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
           <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow">
-             <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
+             <Image src={contribution.image_} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
              <div className="flex items-center gap-3 mb-2">
@@ -126,7 +126,7 @@ function SuccessfulContributionCard({ contribution }: { contribution: BackerCont
        
        <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full pl-2 relative z-10">
           <div className="relative w-full sm:w-40 h-52 sm:h-40 shrink-0 rounded-2xl overflow-hidden border border-slate-300 shadow-sm group-hover:shadow-md transition-shadow">
-             <Image src={contribution.image} alt={contribution.title} fill className="object-cover" />
+             <Image src={contribution.image_} alt={contribution.title} fill className="object-cover" />
           </div>
           <div className="space-y-3 w-full">
              <div className="flex items-center gap-3 mb-2">

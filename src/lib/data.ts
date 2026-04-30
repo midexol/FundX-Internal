@@ -142,7 +142,6 @@ export const CAMPAIGNS: Campaign[] = [
   },
 
   // --- SUCCESSFUL CAMPAIGNS (Will sort to middle) ---
-// ← the muse was here
   {
     id: "defi-for-everyone",
     title: "DeFi for Everyone",

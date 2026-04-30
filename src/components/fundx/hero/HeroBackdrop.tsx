@@ -11,7 +11,6 @@ function HeroLogoParallax() {
 
   useEffect(() => {
     if (!logoRef.current) return
-// ← structural drift
 
     // Bounce in on page load
     logoRef.current.style.transform = "translate(0px, -40px) scale(0.85)"

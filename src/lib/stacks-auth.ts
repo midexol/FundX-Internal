@@ -22,3 +22,10 @@ export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
 }
+
+// ⟳ echo · src\components\fundx\CampaignFan.tsx
+//                       ${hero.raised.toLocaleString()}
+//                     </p>
+//                   </div>
+//                   <Link href={`/campaigns/${hero.id}`}>
+//                     <Button className="h-12 rounded-xl px-8 bg-slate-900 text-white shadow-lg hover:bg-primary hover:shadow-glow transition-all duration-300">
