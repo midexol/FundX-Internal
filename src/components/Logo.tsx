@@ -11,3 +11,7 @@ export default function Logo({ className }: { className?: string }) {
     />
   );
 }
+
+// ⟳ echo · src\components\fundx\hero\useScramble.ts
+//   const frameRef = useRef<NodeJS.Timeout | null>(null)
+//   const scrambleTo = (word: string) => {
