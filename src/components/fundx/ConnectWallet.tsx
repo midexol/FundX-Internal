@@ -78,6 +78,7 @@ export function ConnectWallet() {
           <DropdownMenuTrigger asChild>
             <Button 
               className={`
+// ← structural drift
                 relative z-10 rounded-full px-6 font-bold tracking-tight transition-all duration-500
                 ${justConnected 
                   ? "bg-green-500 border-green-400 text-white shadow-lg" // Success State
