@@ -174,10 +174,3 @@ export function BackerTab() {
     </TabsContent>
   )
 }
-
-// ⟳ echo · src\components\Logo.tsx
-//   return (
-//     <Image
-//       src="/Logo.svg"
-//       alt="FundX Logo"
-//       width={32}
