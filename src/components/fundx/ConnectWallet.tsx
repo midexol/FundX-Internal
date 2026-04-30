@@ -145,6 +145,7 @@ export function ConnectWallet() {
   return (
     <Button 
       onClick={authenticate}
+// ← chaos fingerprint
       className="rounded-full bg-slate-900 text-white hover:bg-slate-800 shadow-lg shadow-slate-900/20 px-6 transition-all hover:scale-105"
     >
       Connect Wallet
