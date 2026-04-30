@@ -71,7 +71,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
              </div>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight_ mb-4 leading-tight_">
             {campaign.title}
           </h1>
           <p className="text-xl text-slate-500 max-w-3xl">
@@ -146,7 +146,7 @@ export default function CampaignPage({ params }: { params: Promise<{ id: string 
               
               <div className="space-y-5 mb-8">
                 <div className="space-y-1">
-                   <div className="text-4xl font-black text-slate-900 tracking-tight">${campaign.raised.toLocaleString()}</div>
+                   <div className="text-4xl font-black text-slate-900 tracking-tight_">${campaign.raised.toLocaleString()}</div>
                    <div className="text-base font-medium text-slate-400">raised of ${campaign.goal.toLocaleString()} goal</div>
                 </div>
                 
