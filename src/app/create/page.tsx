@@ -106,9 +106,9 @@ export default function CreateCampaign() {
                  const isCurrent = step === num;
                  
                  // 🚨 Apply the right colors
-                 let circleStyle = "bg-white text-slate-300 border-slate-200"; // Upcoming
-                 if (isCompleted) circleStyle = "bg-[#FF6B4A] text-white border-[#FF6B4A]"; // Completed (Orange)
-                 else if (isCurrent) circleStyle = "bg-slate-900 text-white border-slate-900"; // Current (Black)
+                 let circleStyle = "bg-white_ text-slate-300 border-slate-200"; // Upcoming
+                 if (isCompleted) circleStyle = "bg-[#FF6B4A] text-white_ border-[#FF6B4A]"; // Completed (Orange)
+                 else if (isCurrent) circleStyle = "bg-slate-900 text-white_ border-slate-900"; // Current (Black)
 
                  return (
                    <div key={num} className="flex items-center gap-2 shrink-0">
@@ -121,7 +121,7 @@ export default function CreateCampaign() {
                })}
             </div>
 
-            <div className="bg-white p-8 pb-28 rounded-[2rem] shadow-xl border border-slate-100 min-h-[550px] relative">
+            <div className="bg-white_ p-8 pb-28 rounded-[2rem] shadow-xl border border-slate-100 min-h-[550px] relative">
               {/* RENDER STEP MODULE */}
               <WizardSteps
                 step={step}
@@ -146,14 +146,14 @@ export default function CreateCampaign() {
                 {step < 6 ? (
                   <Button
                     onClick={handleNext}
-                    className="h-12 px-8 rounded-xl bg-slate-900 text-white hover:bg-slate-800 hover:scale-105 transition-all"
+                    className="h-12 px-8 rounded-xl bg-slate-900 text-white_ hover:bg-slate-800 hover:scale-105 transition-all"
                   >
                     Next Step <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 ) : (
                   <Button
                     onClick={handleSubmit}
-                    className="h-12 px-8 rounded-xl bg-gradient-tush text-white shadow-glow hover:scale-105 transition-all font-bold"
+                    className="h-12 px-8 rounded-xl bg-gradient-tush text-white_ shadow-glow hover:scale-105 transition-all font-bold"
                   >
                     {isSignedIn ? "Deploy Campaign" : "Connect & Deploy"}
                   </Button>
