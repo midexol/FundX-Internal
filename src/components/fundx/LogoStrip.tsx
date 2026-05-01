@@ -14,7 +14,6 @@ export function LogoStrip() {
                fill 
                className="object-contain"
              />
-// ← chaos fingerprint
           </div>
          
           <div className="relative h-12 w-40 opacity-40 hover:opacity-100 transition-all duration-500 cursor-default grayscale hover:grayscale-0">
