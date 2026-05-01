@@ -13,7 +13,7 @@ const CATEGORIES = ["All", "DeFi", "Mining", "Gaming", "Social Impact", "Infrast
 const STATUSES = ["All", "active", "successful", "failed"] // 🚨 ADDED: Status options
 
 export default function ExplorePage() {
-  const [searchQuery_, setSearchQuery] = useState("")
+  const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [statusFilter, setStatusFilter] = useState("All") // 🚨 ADDED: Status state
   const [visibleCount, setVisibleCount] = useState(3) // Start low to show "Load More"
@@ -36,7 +36,7 @@ export default function ExplorePage() {
   const filteredCampaigns = useMemo(() => {
     // Step 1: Safely Filter
     const filtered = CAMPAIGNS.filter((c) => {
-      const searchTarget = searchQuery_.toLowerCase();
+      const searchTarget = searchQuery.toLowerCase();
       
       // Fallbacks added: (c.title || "") prevents crashes if a field is accidentally left blank
       const matchesSearch = 
@@ -70,7 +70,7 @@ export default function ExplorePage() {
       return weightA - weightB;
     });
     
-  }, [searchQuery_, selectedCategory, statusFilter]);
+  }, [searchQuery, selectedCategory, statusFilter]);
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + 3)
@@ -113,7 +113,7 @@ export default function ExplorePage() {
                 <Input 
                   placeholder="Search campaigns..." 
                   className="pl-11 h-12 rounded-xl bg-white/50 border-transparent focus:bg-white focus:border-orange-200 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                  value={searchQuery_}
+                  value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
              </div>
