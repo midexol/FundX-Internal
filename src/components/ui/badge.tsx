@@ -46,10 +46,3 @@ function Badge({
 }
 
 export { Badge, badgeVariants }
-
-
-// ⟳ echo · src\components\fundx\LogoStrip.tsx
-//             </span>
-//           </div>
-//         </div>
-//       </div>

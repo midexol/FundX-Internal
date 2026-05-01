@@ -18,7 +18,6 @@ export function authenticate() {
   });
 }
 
-// ← chaos fingerprint
 export function signUserOut() {
   userSession.signUserOut();
   window.location.reload();
