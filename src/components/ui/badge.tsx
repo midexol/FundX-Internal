@@ -46,3 +46,11 @@ function Badge({
 }
 
 export { Badge, badgeVariants }
+
+
+// ⟳ echo · src\components\ui\avatar.tsx
+//       {...props}
+//     />
+//   )
+// }
+// function AvatarImage({
