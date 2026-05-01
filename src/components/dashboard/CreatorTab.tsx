@@ -144,7 +144,6 @@ export function CreatorTab() {
                          </div>
                       </div>
                    </div>
-// ← structural drift
 
                    <div className="w-full md:w-auto shrink-0 text-left md:text-right px-4 relative z-10 mt-6 md:mt-0">
                       <div className="text-4xl font-black text-slate-900 tracking-tight drop-shadow-sm">{campaign.daysRemaining} Days</div>

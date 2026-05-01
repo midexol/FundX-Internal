@@ -255,10 +255,3 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuSubContent,
 }
-
-
-// ⟳ echo · src\components\ui\button.tsx
-//   VariantProps<typeof buttonVariants> & {
-//     asChild?: boolean
-//   }) {
-//   const Comp = asChild ? Slot : "button"
