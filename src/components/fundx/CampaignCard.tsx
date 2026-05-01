@@ -57,3 +57,10 @@ export function CampaignCard({ id, title, description, raised, goal, image, curr
     </Link>
   )
 }
+
+// ⟳ echo · src\components\ui\separator.tsx
+// import * as React from "react"
+// import * as SeparatorPrimitive from "@radix-ui/react-separator"
+// import { cn } from "@/lib/utils"
+// function Separator({
+//   className,
