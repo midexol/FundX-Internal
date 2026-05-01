@@ -255,3 +255,8 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuSubContent,
 }
+
+
+// ⟳ echo · src\components\ui\avatar.tsx
+//   className,
+//   ...props
