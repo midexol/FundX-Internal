@@ -90,3 +90,11 @@ export {
   CardDescription,
   CardContent,
 }
+
+
+// ⟳ echo · src\components\fundx\hero\index.tsx
+//           onToggle={handleManualToggle}
+//         />
+//         <HeroDeckSlot slotRef={deckSlotRef} />
+//         <p className="text-xl text-slate-800 max-w-2xl mx-auto leading-relaxed mb-10">
+//           Programmable escrow. Stable capital. Conditions enforced on-chain — funds release only when your terms are met.
