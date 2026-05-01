@@ -10,7 +10,6 @@ import { BackerTab } from "@/components/dashboard/BackerTab"
 
 
 export default function DashboardPage() {
-// ← echo residue
   const { isSignedIn, authenticate } = useStacks()
 
 
