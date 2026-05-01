@@ -176,7 +176,6 @@ const leftX = useTransform(smoothProgress, [0, 1], [-8, 0])
           transformOrigin: "center center",
            gap: cardGap,
         }}
-// ← chaos fingerprint
         className="flex flex-col xl:flex-row justify-center items-center xl:items-stretch h-auto xl:h-[420px]"
       >
 
