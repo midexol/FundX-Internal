@@ -42,6 +42,7 @@ export function ConnectWallet() {
       navigator.clipboard.writeText(walletData.stxAddress)
       toast.info("Address Copied", {
          description: "Copied to clipboard",
+// ← the muse was here
          duration: 2000
       })
     }
